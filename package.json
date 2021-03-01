@@ -12,6 +12,7 @@
     "dinero.js": "^1.8.1",
     "history": "^4.10.1",
     "moment": "^2.26.0",
+    "raw-loader": "^4.0.2",
     "react": "^17.0.1",
     "react-addons-shallow-compare": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.16",
