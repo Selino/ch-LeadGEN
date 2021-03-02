@@ -1,5 +1,4 @@
 import React from "react"
-import { css } from "@emotion/core"
 import colors from "../../tokens/colors"
 import fontSizes from "../../tokens/fontSizes"
 import spacing from "../../tokens/spacing"
@@ -11,16 +10,16 @@ export default function Badge(props) {
   return (
     <div
       className='badge'
-      css={css`
-        color: ${colors.white};
-        padding: ${spacing.tiny};
-        font-size: ${fontSizes.tiny};
-        font-weight: ${fontWeights.black};
-        background-color: ${variant};
-        text-transform: uppercase;
-        width: 100%;
-        border-radius: ${radii.circle};
-      `}
+      style={{
+        color: colors.white,
+        padding: spacing.tiny,
+        fontSize: fontSizes.tiny,
+        fontWeight: fontWeights.black,
+        backgroundColor: variant,
+        textTransform: "uppercase",
+        width: "100%",
+        borderRadius: radii.circle,
+      }}
     >
       {props.text}
     </div>

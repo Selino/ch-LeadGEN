@@ -1,17 +1,30 @@
 import React from "react"
 import { getSampleData } from "../../fixtures/ExecutiveSummaryData"
 import Badge from "../Badge/Badge"
+import { Button } from "react-bootstrap"
 import BootstrapTable from "react-bootstrap-table-next"
-import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit"
+import ToolkitProvider, {
+  Search,
+  CSVExport,
+} from "react-bootstrap-table2-toolkit"
 import MiniBar from "../MiniBar/MiniBar"
 import moment from "moment"
 import Dinero from "dinero.js"
-import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css"
-import "react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit.min.css"
 import styled from "@emotion/styled"
 import colors from "../../tokens/colors"
+import {
+  faCloudDownloadAlt,
+  faSlidersH,
+} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import paginationFactory from "react-bootstrap-table2-paginator"
+import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css"
 
 const Emotion = styled.div`
+  th,
+  td {
+    text-align: left;
+  }
   table {
     font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +33,6 @@ const Emotion = styled.div`
 
   .table-container {
     border: solid 1px #ccc;
-    border-radius: 5px;
   }
 
   .table-header {
@@ -28,9 +40,10 @@ const Emotion = styled.div`
     background-color: #f5f5f5;
   }
 
-  .search-container {
+  .table-header-container {
     padding: 0.5rem;
     line-height: -0.2rem;
+    text-align: left;
   }
 
   .table-name-container {
@@ -49,9 +62,24 @@ const Emotion = styled.div`
     display: inline-block;
     width: 300px;
   }
+
+  .controls {
+    float: right;
+  }
+
+  .controls > .btn {
+    margin-left: 1rem;
+  }
+
+  .react-bootstrap-table-pagination {
+    padding: 0 16px;
+    text-align: left;
+  }
 `
 
 const myData = getSampleData()
+
+const { ExportCSVButton } = CSVExport
 
 export default function ExecutiveSummary() {
   const daysInMarketFormatter = (cell, row) => {
@@ -170,6 +198,16 @@ export default function ExecutiveSummary() {
       formatter: displayDate,
     },
   ]
+
+  const customTotal = (from, to, size) => (
+    <span
+      className='react-bootstrap-table-pagination-total'
+      style={{ marginLeft: "1rem" }}
+    >
+      Showing {from} to {to} of {size} Results
+    </span>
+  )
+
   return (
     <Emotion>
       <ToolkitProvider
@@ -177,24 +215,38 @@ export default function ExecutiveSummary() {
         data={myData}
         columns={columns}
         bootstrap4={true}
+        exportCSV
         search
       >
         {(props) => (
           <div className='body-container table-container'>
-            <div className='search-container'>
+            <div className='table-header-container'>
               <div className='table-name-container'>Strategy List</div>
               <div className='searchbar-container'>
                 <SearchBar {...props.searchProps} />
+              </div>
+              <div className='controls'>
+                <Button variant='outline-secondary'>
+                  Setttings <FontAwesomeIcon icon={faSlidersH} />
+                </Button>
+                <ExportCSVButton {...props.csvProps} className='btn-primary'>
+                  Export <FontAwesomeIcon icon={faCloudDownloadAlt} />
+                </ExportCSVButton>
               </div>
             </div>
 
             <BootstrapTable
               {...props.baseProps}
+              exportCSV='true'
               bordered={false}
               striped={false}
               hover={true}
               condensed={false}
               headerClasses='table-header'
+              pagination={paginationFactory({
+                showTotal: true,
+                paginationTotalRenderer: customTotal,
+              })}
             />
           </div>
         )}
