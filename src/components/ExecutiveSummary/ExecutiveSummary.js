@@ -1,5 +1,5 @@
 import React from "react"
-import { getSampleData } from "../../fixtures/ExecutiveSummaryData"
+import { getSampleData } from "./ExecutiveSummaryData"
 import Badge from "../Badge/Badge"
 import { Button } from "react-bootstrap"
 import BootstrapTable from "react-bootstrap-table-next"
@@ -12,6 +12,7 @@ import moment from "moment"
 import Dinero from "dinero.js"
 import styled from "@emotion/styled"
 import colors from "../../tokens/colors"
+import fontSizes from "../../tokens/fontSizes"
 import {
   faCloudDownloadAlt,
   faSlidersH,
@@ -25,6 +26,7 @@ const Emotion = styled.div`
   td {
     text-align: left;
   }
+
   table {
     font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,9 +73,33 @@ const Emotion = styled.div`
     margin-left: 1rem;
   }
 
+  /* pagination */
+
   .react-bootstrap-table-pagination {
     padding: 0 16px;
     text-align: left;
+  }
+
+  .react-bootstrap-table-pagination-total {
+    font-size: ${fontSizes.sub};
+  }
+
+  .page-link {
+    color: ${colors.primaryInactive};
+  }
+
+  .btn-primary,
+  .page-item.active .page-link {
+    color: ${colors.white};
+    background-color: ${colors.primaryInactive};
+    border-color: ${colors.primaryInactive};
+  }
+
+  .btn-primary:hover,
+  .page-item.active .page-link:hover {
+    color: ${colors.white};
+    background-color: ${colors.primaryActive};
+    border-color: ${colors.primarySelected};
   }
 `
 
@@ -90,7 +116,7 @@ export default function ExecutiveSummary() {
         <MiniBar
           Perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
-          forGroundColor='#428BCA'
+          forGroundColor={colors.primaryInactive}
         />
       </div>
     )
