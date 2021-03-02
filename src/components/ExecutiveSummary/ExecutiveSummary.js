@@ -13,6 +13,7 @@ import Dinero from "dinero.js"
 import styled from "@emotion/styled"
 import colors from "../../tokens/colors"
 import fontSizes from "../../tokens/fontSizes"
+import radii from "../../tokens/radii"
 import {
   faCloudDownloadAlt,
   faSlidersH,
@@ -20,6 +21,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import paginationFactory from "react-bootstrap-table2-paginator"
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css"
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css"
 
 const Emotion = styled.div`
   th,
@@ -35,6 +37,7 @@ const Emotion = styled.div`
 
   .table-container {
     border: solid 1px #ccc;
+    border-radius: ${radii.soft};
   }
 
   .table-header {
@@ -100,6 +103,10 @@ const Emotion = styled.div`
     color: ${colors.white};
     background-color: ${colors.primaryActive};
     border-color: ${colors.primarySelected};
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: ${colors.alertWarningBackground};
   }
 `
 
@@ -237,6 +244,7 @@ export default function ExecutiveSummary() {
   return (
     <Emotion>
       <ToolkitProvider
+        bootstrap4
         keyField='id'
         data={myData}
         columns={columns}
