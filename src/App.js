@@ -6,7 +6,9 @@ function App() {
   return (
     <div className='App'>
       <NavHeader />
-      <ExecutiveSummary />
+      <main className='body p-4'>
+        <ExecutiveSummary />
+      </main>
     </div>
   )
 }
