@@ -46,7 +46,7 @@ const Emotion = styled.div`
   }
 
   .table-header-container {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0;
     line-height: -0.2rem;
     text-align: left;
   }
