@@ -2,7 +2,6 @@ import React from "react"
 import { getSampleData } from "./ExecutiveSummaryData"
 import Badge from "../Badge/Badge"
 import { Button } from "react-bootstrap"
-import BootstrapTable from "react-bootstrap-table-next"
 import ToolkitProvider, {
   Search,
   CSVExport,
@@ -19,6 +18,7 @@ import {
   faSlidersH,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import BootstrapTable from "react-bootstrap-table-next"
 import paginationFactory from "react-bootstrap-table2-paginator"
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css"
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css"
@@ -248,7 +248,6 @@ export default function ExecutiveSummary() {
         keyField='id'
         data={myData}
         columns={columns}
-        bootstrap4={true}
         exportCSV
         search
       >
