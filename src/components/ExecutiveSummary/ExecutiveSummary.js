@@ -105,17 +105,27 @@ const Emotion = styled.div`
     border-color: ${colors.primarySelected};
   }
 
-  .btn-success,
-  .page-item.active .page-link {
+  .btn-success {
     color: ${colors.white};
     background-color: ${colors.alertSuccess};
     border-color: none;
   }
 
-  .btn-success:hover,
-  .page-item.active .page-link:hover {
+  .btn-success:hover {
     color: ${colors.white};
     background-color: ${colors.successHover};
+    border-color: none;
+  }
+
+  .page-item.active .page-link {
+    color: ${colors.white};
+    background-color: ${colors.secondaryInactive};
+    border-color: none;
+  }
+
+  .page-item.active .page-link:hover {
+    color: ${colors.white};
+    background-color: ${colors.secondaryHover};
     border-color: none;
   }
 
