@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .svg-light > path {
+    @apply fill-current text-white;
+  }
+}
