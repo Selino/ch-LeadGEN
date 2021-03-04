@@ -160,9 +160,9 @@ export default function ExecutiveSummary() {
   }
 
   const displayStatus = (status) => {
-    let variant = colors.graysGray2
+    let variant = colors.graysGray3
     if (status === "live") {
-      variant = colors.primaryInactive
+      variant = colors.graysGray1
     }
     return <Badge text={status} variant={variant} />
   }
@@ -262,7 +262,7 @@ export default function ExecutiveSummary() {
                 <Button variant='outline-secondary'>
                   Setttings <FontAwesomeIcon icon={faSlidersH} />
                 </Button>
-                <ExportCSVButton {...props.csvProps} className='btn-primary'>
+                <ExportCSVButton {...props.csvProps} className='btn-success'>
                   Export <FontAwesomeIcon icon={faCloudDownloadAlt} />
                 </ExportCSVButton>
               </div>
