@@ -105,6 +105,20 @@ const Emotion = styled.div`
     border-color: ${colors.primarySelected};
   }
 
+  .btn-success,
+  .page-item.active .page-link {
+    color: ${colors.white};
+    background-color: ${colors.alertSuccess};
+    border-color: none;
+  }
+
+  .btn-success:hover,
+  .page-item.active .page-link:hover {
+    color: ${colors.white};
+    background-color: ${colors.successHover};
+    border-color: none;
+  }
+
   .table-hover tbody tr:hover {
     background-color: ${colors.alertWarningBackground};
   }
@@ -162,7 +176,7 @@ export default function ExecutiveSummary() {
   const displayStatus = (status) => {
     let variant = colors.graysGray3
     if (status === "live") {
-      variant = colors.graysGray1
+      variant = colors.graysGray2
     }
     return <Badge text={status} variant={variant} />
   }
