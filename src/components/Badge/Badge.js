@@ -18,7 +18,7 @@ export default function Badge(props) {
         backgroundColor: variant,
         textTransform: "uppercase",
         width: "100%",
-        borderRadius: radii.circle,
+        borderRadius: radii.rounded,
       }}
     >
       {props.text}

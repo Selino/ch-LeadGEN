@@ -5,7 +5,7 @@ import colors from "./tokens/colors"
 
 function App() {
   return (
-    <div className='App' style={{ backgroundColor: colors.background }}>
+    <div className='App'>
       <NavHeader />
       <main className='p-4'>
         <ExecutiveSummary />

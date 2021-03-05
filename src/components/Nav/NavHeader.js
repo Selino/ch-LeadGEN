@@ -10,7 +10,7 @@ import CompanyDropdown from "./CompanyDropdown"
 
 export default function NavHeader(props) {
   return (
-    <nav className='p-3 mx-auto bg-brand text-white flex justify-between'>
+    <nav className='p-2 mx-auto bg-brand text-white flex justify-between'>
       <div className='my-auto'>
         <Logo className='inline-block mr-2 fill-current' />
         <LogoChText className='inline-block' />

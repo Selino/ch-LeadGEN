@@ -1,5 +1,6 @@
 import React from "react"
 import colors from "../../tokens/colors"
+import radii from "../../tokens/radii"
 
 export default function MiniBar(props) {
   let backGroundColor = props.backGroundColor
@@ -12,7 +13,7 @@ export default function MiniBar(props) {
     backgroundColor: backGroundColor,
     width: "60px",
     height: "16px",
-    borderRadius: "2px",
+    borderRadius: radii.rounded,
     overflow: "hidden",
     display: "inline-block",
     marginLeft: ".5rem",

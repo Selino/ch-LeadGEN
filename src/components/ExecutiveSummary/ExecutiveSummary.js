@@ -188,7 +188,7 @@ export default function ExecutiveSummary() {
   const displayStatus = (status) => {
     let variant = colors.graysGray3
     if (status === "live") {
-      variant = colors.graysGray2
+      variant = colors.alertWarning
     }
     return <Badge text={status} variant={variant} />
   }
