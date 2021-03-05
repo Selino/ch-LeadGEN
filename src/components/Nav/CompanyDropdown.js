@@ -8,7 +8,7 @@ export default function CompanyDropdown(props) {
         <div className='text-base text-right flex-nowrap leading-none'>
           User Name
         </div>
-        <div className='text-xs text-right flex-nowrap leading-normal opacity-70'>
+        <div className='text-xs text-right flex-nowrap leading-normal opacity-70 uppercase'>
           Company Name
         </div>
       </div>

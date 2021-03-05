@@ -38,6 +38,7 @@ const Emotion = styled.div`
   .table-container {
     border: solid 1px #ccc;
     border-radius: ${radii.soft};
+    background-color: ${colors.white};
   }
 
   .table-header {
@@ -120,12 +121,13 @@ const Emotion = styled.div`
   .page-item.active .page-link {
     color: ${colors.white};
     background-color: ${colors.secondaryInactive};
-    border-color: none;
+    border-color: ${colors.secondaryInactive};
   }
 
   .page-item.active .page-link:hover {
     color: ${colors.white};
     background-color: ${colors.secondaryHover};
+    border-color: ${colors.secondaryHover};
     border-color: none;
   }
 

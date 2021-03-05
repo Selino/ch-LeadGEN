@@ -28,9 +28,10 @@ const colors = {
  "graysGray4": "rgba(224, 224, 224, 1)",
  "graysGray3": "rgba(189, 189, 189, 1)",
  "graysGray2": "rgba(130, 130, 130, 1)",
- "graysGray1": "rgba(79, 79, 79, 1)",
+ "graysGray1": "rgba(66, 66, 66, 1)",
+ "background": "rgba(244, 244, 244, 1)",
  "white": "rgba(255, 255, 255, 1)",
- "black": "rgba(34, 34, 34, 1)"
+ "black": "rgba(0, 42, 63, 1)"
 }
 
 module.exports = colors;
