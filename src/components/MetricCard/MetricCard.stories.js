@@ -5,12 +5,16 @@ export default {
   title: "MetricCard",
   component: MetricCard,
   argTypes: {
-    smallNumber: { control: "number" },
+    number: { control: "text" },
   },
   args: {
-    smallNumber: 15,
+    number: "0000",
   },
   parameters: {},
 }
 
-export const Default = (args) => <MetricCard {...args} />
+export const Default = (args) => (
+  <div className='h-full w-1/4'>
+    <MetricCard {...args} />
+  </div>
+)

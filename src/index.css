@@ -6,4 +6,12 @@
   .svg-light > path {
     @apply fill-current text-white;
   }
+
+  .svg-success > path {
+    @apply fill-current text-success;
+  }
+
+  .svg-danger > path {
+    @apply fill-current text-danger;
+  }
 }
