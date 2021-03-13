@@ -1,7 +1,6 @@
 import "./App.css"
 import NavHeader from "./components/Nav/NavHeader"
 import ExecutiveSummary from "./components/ExecutiveSummary/ExecutiveSummary"
-import colors from "./tokens/colors"
 
 function App() {
   return (
