@@ -1,5 +1,5 @@
 import React from "react"
-import { ReactComponent as SmArrowDown } from "../../graphics/icoSmArrowDown.svg"
+import { ReactComponent as SmArrowDown } from "../../graphics/icoCarretDown.svg"
 
 export default function CompanyDropdown(props) {
   return (
