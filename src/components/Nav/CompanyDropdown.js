@@ -12,7 +12,7 @@ export default function CompanyDropdown(props) {
           Company Name
         </div>
       </div>
-      <SmArrowDown className='svg-light my-auto' />
+      <SmArrowDown className='svg-light my-auto' style={{ width: "10px" }} />
     </div>
   )
 }

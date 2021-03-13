@@ -43,7 +43,7 @@ const Emotion = styled.div`
 
   .table-header {
     font-variant-caps: all-small-caps;
-    background-color: #f5f5f5;
+    background-color: ${colors.graysGray5};
   }
 
   .table-header-container {
