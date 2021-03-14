@@ -1,8 +1,10 @@
 import React from "react"
+import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
 import MetricTrendIndicator from "../MetricTrendIndicator/MetricTrendIndicator"
 
 export default function MetricCard(props) {
   const {
+    currency = null,
     number = null,
     prevNumber = null,
     label = "Metric Title",
@@ -12,15 +14,15 @@ export default function MetricCard(props) {
   return (
     <div className='rounded-xl shadow box-content relative p-3'>
       <div>
-        <span
-          className='text-mobilevw tablet:text-tabletvw laptop:text-laptopvw'
-          style={{ fontWeight: "900", lineHeight: "60%" }}
-        >
+        <div className='inline-block align-top pl-1 font-medium text-md opacity-50'>
+          <DisplayCurrency code={currency} />
+        </div>
+        <div className='inline-block text-mobilevw tablet:text-tabletvw laptop:text-laptopvw font-extrabold leading-none'>
           {number}
-        </span>
-        <span className='pl-1 font-medium text-md'>{unit}</span>
+        </div>
+        <div className='inline-block pl-1 font-medium'>{unit}</div>
       </div>
-      <div className='opacity-40 m-0 font-medium text-sm'>{label}</div>
+      <div className='opacity-50 m-0 font-medium text-sm'>{label}</div>
       <div
         className='trend-arrow absolute'
         style={{ right: "1rem", top: "1rem" }}
