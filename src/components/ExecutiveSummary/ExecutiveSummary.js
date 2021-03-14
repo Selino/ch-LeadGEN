@@ -66,7 +66,6 @@ const Emotion = styled.div`
 
   .searchbar-container {
     display: inline-block;
-    width: 300px;
   }
 
   .controls {
@@ -133,6 +132,10 @@ const Emotion = styled.div`
 
   .table-hover tbody tr:hover {
     background-color: ${colors.alertWarningBackground};
+  }
+
+  .react-bootstrap-table table {
+    table-layout: auto;
   }
 `
 
@@ -206,18 +209,19 @@ export default function ExecutiveSummary() {
       dataField: "serviceLine",
       text: "Service Line",
       sort: true,
-      style: { maxWidth: "200px" },
+      style: { maxWidth: "128px" },
     },
     {
       dataField: "name",
       text: "Name",
       sort: true,
-      style: { maxWidth: "200px" },
+      style: { minWidth: "144px" },
     },
     {
       dataField: "spendToDate",
       text: "Spend to Date",
       sort: true,
+      style: { whiteSpace: "nowrap" },
       formatter: displaySpend,
     },
     {
@@ -284,7 +288,7 @@ export default function ExecutiveSummary() {
               <div className='searchbar-container'>
                 <SearchBar {...props.searchProps} />
               </div>
-              <div className='controls'>
+              <div className='controls hidden md:block'>
                 <Button variant='outline-secondary'>
                   Setttings <FontAwesomeIcon icon={faSlidersH} />
                 </Button>
@@ -306,6 +310,9 @@ export default function ExecutiveSummary() {
                 showTotal: true,
                 paginationTotalRenderer: customTotal,
               })}
+              striped
+              bordered={false}
+              wrapperClasses='table-responsive'
             />
           </div>
         )}
