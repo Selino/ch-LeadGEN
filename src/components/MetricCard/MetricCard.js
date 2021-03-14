@@ -1,5 +1,5 @@
 import React from "react"
-import TrendIndicator from "../TrendIndicator/TrendIndicator"
+import MetricTrendIndicator from "../MetricTrendIndicator/MetricTrendIndicator"
 
 export default function MetricCard(props) {
   const {
@@ -25,7 +25,7 @@ export default function MetricCard(props) {
         className='trend-arrow absolute'
         style={{ right: "1rem", top: "1rem" }}
       >
-        <TrendIndicator number={number} prevNumber={prevNumber} />
+        <MetricTrendIndicator number={number} prevNumber={prevNumber} />
       </div>
     </div>
   )
