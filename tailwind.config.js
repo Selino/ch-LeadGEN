@@ -32,7 +32,7 @@ module.exports = {
       fontSize: {
         mobilevw: "8vw",
         tabletvw: "5vw",
-        laptopvw: "4vw",
+        laptopvw: "3vw",
         dektopvw: "5vw",
       },
       screens: {
