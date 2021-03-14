@@ -19,7 +19,7 @@ export default function NavHeader(props) {
       <div className='nav-control flex flex-row'>
         <CompanyDropdown className='mr-4' />
         <NavLocation className='svg-light mr-4 my-auto' />
-        <NavHamburger className='svg-light mr-4 my-auto' />
+        <NavHamburger className='svg-light mr-2 my-auto' />
       </div>
     </nav>
   )
