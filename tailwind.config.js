@@ -12,7 +12,7 @@ module.exports = {
       gray4: colors.graysGray4,
       gray5: colors.graysGray5,
       gray6: colors.graysGray6,
-      blue: colors.primaryInactive,
+      primary: colors.primaryInactive,
       brand: colors.brandLeadGen,
       success: colors.alertSuccess,
       danger: colors.alertDanger,
@@ -28,6 +28,22 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      fontSize: {
+        mobilevw: "8vw",
+        tabletvw: "5vw",
+        laptopvw: "4vw",
+        dektopvw: "5vw",
+      },
+      screens: {
+        tablet: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: "1280px",
+        // => @media (min-width: 1280px) { ... }
       },
     },
   },

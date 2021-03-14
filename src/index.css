@@ -7,6 +7,10 @@
     @apply fill-current text-white;
   }
 
+  .svg-primary > path {
+    @apply fill-current text-primary;
+  }
+
   .svg-success > path {
     @apply fill-current text-success;
   }
