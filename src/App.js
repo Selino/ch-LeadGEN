@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='App'>
       <NavHeader />
-      <main className='p-4'>
-        <div className='grid gap-7 grid-cols-4 mb-4'>
+      <main className='p-5'>
+        <div className='grid gap-7 grid-cols-4 mb-5'>
           <MetricCard number='$5.2' label='Total Spend' unit='k' />
           <MetricCard number='82' label='' unit='' />
           <MetricCard number='$205' label='Total CPC' />
