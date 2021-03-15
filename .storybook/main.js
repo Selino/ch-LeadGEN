@@ -6,6 +6,7 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-essentials",
     "@storybook/addon-links",
+    "@storybook/addon-docs",
   ],
   webpackFinal: (config) => {
     return {

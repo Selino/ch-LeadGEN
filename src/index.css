@@ -11,6 +11,10 @@
     @apply fill-current text-primary;
   }
 
+  .svg-secondary > path {
+    @apply fill-current text-gray3;
+  }
+
   .svg-success > path {
     @apply fill-current text-success;
   }

@@ -1,17 +1,23 @@
 import React from "react"
 import { ReactComponent as ArrowDown } from "../../graphics/icoArrowCircleDown.svg"
 import { ReactComponent as ArrowUp } from "../../graphics/icoArrowCircleUp.svg"
+import { ReactComponent as Equal } from "../../graphics/icoEqualCircle.svg"
+import { graysGray3, graysGray5 } from "../../tokens/colors"
 
 export default function TrendIndicator(props) {
-  const { prevNumber = 2, number = 4 } = props
-  const trendVariant = "svg-primary"
+  const { value, baseValue } = props
   return (
-    <div>
-      {number > prevNumber ? (
-        <ArrowUp className={trendVariant} />
-      ) : (
-        <ArrowDown className={trendVariant} />
+    <>
+      {value > baseValue && baseValue != null && (
+        <ArrowUp className='svg-primary' />
       )}
-    </div>
+      {value < baseValue && baseValue != null && (
+        <ArrowDown className='svg-primary' />
+      )}
+      {value == baseValue && baseValue != null && (
+        <Equal className='svg-secondary' />
+      )}
+      {baseValue == null && <></>}
+    </>
   )
 }

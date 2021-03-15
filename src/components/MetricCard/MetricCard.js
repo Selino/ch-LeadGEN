@@ -1,12 +1,13 @@
 import React from "react"
 import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
+import DisplayUnit from "../DisplayUnit/DisplayUnit"
 import MetricTrendIndicator from "../MetricTrendIndicator/MetricTrendIndicator"
 
 export default function MetricCard(props) {
   const {
     currency = null,
-    number = null,
-    prevNumber = null,
+    value = null,
+    baseValue = null,
     label = "Metric Title",
     unit = null,
   } = props
@@ -18,16 +19,18 @@ export default function MetricCard(props) {
           <DisplayCurrency code={currency} />
         </div>
         <div className='inline-block text-mobilevw tablet:text-tabletvw laptop:text-laptopvw font-extrabold leading-none'>
-          {number}
+          {value}
         </div>
-        <div className='inline-block pl-1 font-medium'>{unit}</div>
+        <div className='inline-block pl-1 font-medium'>
+          <DisplayUnit unit={unit} />
+        </div>
       </div>
       <div className='opacity-50 m-0 font-medium text-sm'>{label}</div>
       <div
         className='trend-arrow absolute'
         style={{ right: "1rem", top: "1rem" }}
       >
-        <MetricTrendIndicator number={number} prevNumber={prevNumber} />
+        <MetricTrendIndicator value={value} baseValue={baseValue} />
       </div>
     </div>
   )
