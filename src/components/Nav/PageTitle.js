@@ -11,7 +11,7 @@ export default function PageTitle(props) {
       style={{
         paddingTop: spacing.small,
         paddingLeft: spacing.medium,
-        fontFamily: fontFamilies.lightItalic,
+        fontStyle: "italic",
         fontSize: fontSizes.h4,
         color: colors.brandLeadGen,
         fontWeight: fontWeights.light,
