@@ -1,12 +1,16 @@
 const path = require("path")
 
 module.exports = {
-  stories: ["../src/**/*.stories.js"],
+  stories: ["../src/**/*.stories.@(js|mdx)"],
+  reactOptions: {
+    fastRefresh: true,
+  },
   addons: [
     "@storybook/preset-create-react-app",
     "@storybook/addon-essentials",
     "@storybook/addon-links",
     "@storybook/addon-docs",
+    "@storybook/addon-controls",
   ],
   webpackFinal: (config) => {
     return {

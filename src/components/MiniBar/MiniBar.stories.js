@@ -5,12 +5,22 @@ export default {
   title: "MiniBar",
   component: MiniBar,
   argTypes: {
-    Perc: { control: "number" },
+    Perc: {
+      description: "A string sent to the DisplayCurrency component.",
+      table: {
+        type: {
+          summary: "number",
+          detail: "Lorem ipsum dolar",
+        },
+        defaultValue: { summary: "50" },
+      },
+      control: { type: "number" },
+    },
     backGroundColor: { control: "color" },
     forGroundColor: { control: "color" },
   },
   args: {
-    Perc: "50",
+    Perc: 50,
     backGroundColor: "#E5E5E5",
     forGroundColor: "#428BCA",
   },

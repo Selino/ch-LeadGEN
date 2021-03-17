@@ -6,9 +6,9 @@ import MetricTrendIndicator from "../MetricTrendIndicator/MetricTrendIndicator"
 export default function MetricCard(props) {
   const {
     currency = null,
-    value = null,
+    value = 999,
     baseValue = null,
-    label = "Metric Title",
+    label = null,
     unit = null,
   } = props
 
