@@ -2,12 +2,14 @@ import "./App.css"
 import NavHeader from "./components/Nav/NavHeader"
 import ExecutiveSummary from "./components/ExecutiveSummary/ExecutiveSummary"
 import MetricCard from "./components/MetricCard/MetricCard"
+import PageTitle from "./components/Nav/PageTitle"
 
 function App() {
   return (
     <div className='App'>
       <NavHeader />
-      <main className='p-5'>
+      <PageTitle title='Executive Summary' />
+      <main className='p-4'>
         <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
           <MetricCard
             currency='USD'

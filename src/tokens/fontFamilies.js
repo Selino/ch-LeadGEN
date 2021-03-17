@@ -2,9 +2,13 @@
 
 const fontFamilies = {
  "bold": "Roboto-Bold",
+ "boldItalic": "Roboto-BoldItalic",
  "medium": "Roboto-Medium",
+ "mediumItalic": "Roboto-MediumItalic",
  "regular": null,
- "light": "Roboto-Light"
+ "regularItalic": "Roboto-Italic",
+ "light": "Roboto-Light",
+ "lightItalic": "Roboto-LightItalic"
 }
 
 module.exports = fontFamilies;
