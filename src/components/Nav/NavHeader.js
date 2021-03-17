@@ -12,7 +12,7 @@ export default function NavHeader(props) {
     <nav className='p-2 mx-auto bg-brand text-white flex justify-between'>
       <div className='my-auto'>
         <Logo className='inline-block mr-2 fill-current' />
-        <LogoChText className='inline-block hidden tablet:inline' />
+        <LogoChText className='hidden tablet:inline' />
         <VerticalRule className='hidden tablet:inline opacity-50 mx-2' />
         <LogoAppName className='inline-block' />
       </div>
