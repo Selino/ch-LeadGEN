@@ -9,7 +9,7 @@ const fontSizes = {
  "h2": "2.5rem",
  "h1": "3rem",
  "microcopy": "0.75rem",
- "pillText": "0.75rem"
+ "badge": "0.75rem"
 }
 
 module.exports = fontSizes;

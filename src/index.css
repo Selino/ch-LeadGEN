@@ -22,4 +22,8 @@
   .svg-danger > path {
     @apply fill-current text-danger;
   }
+
+  .badge {
+    @apply text-badge text-center;
+  }
 }

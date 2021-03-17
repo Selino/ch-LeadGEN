@@ -309,7 +309,7 @@ export default function ExecutiveSummary() {
                 showTotal: true,
                 paginationTotalRenderer: customTotal,
               })}
-              striped
+              striped={false}
               wrapperClasses='table-responsive'
             />
           </div>

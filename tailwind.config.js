@@ -1,4 +1,5 @@
 const colors = require("./src/tokens/colors")
+const fontSizes = require("./src/tokens/fontSizes")
 
 module.exports = {
   purge: [],
@@ -34,6 +35,7 @@ module.exports = {
         tabletvw: "5vw",
         laptopvw: "3vw",
         dektopvw: "5vw",
+        badge: fontSizes.badge,
       },
       screens: {
         tablet: "640px",
