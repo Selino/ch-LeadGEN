@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       <NavHeader />
       <main className='p-5'>
-        <div className='grid gap-7 mb-4 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
+        <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
           <MetricCard
             currency='USD'
             value='19.8'

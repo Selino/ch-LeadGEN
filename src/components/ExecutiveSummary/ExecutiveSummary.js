@@ -302,7 +302,6 @@ export default function ExecutiveSummary() {
               {...props.baseProps}
               exportCSV='true'
               bordered={false}
-              striped={false}
               hover={true}
               condensed={false}
               headerClasses='table-header'
@@ -311,7 +310,6 @@ export default function ExecutiveSummary() {
                 paginationTotalRenderer: customTotal,
               })}
               striped
-              bordered={false}
               wrapperClasses='table-responsive'
             />
           </div>

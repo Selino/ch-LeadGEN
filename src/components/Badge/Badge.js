@@ -13,7 +13,7 @@ export default function Badge(props) {
       style={{
         color: colors.white,
         padding: spacing.tiny,
-        fontSize: fontSizes.tiny,
+        fontSize: fontSizes.pillText,
         fontWeight: fontWeights.black,
         backgroundColor: variant,
         textTransform: "uppercase",
