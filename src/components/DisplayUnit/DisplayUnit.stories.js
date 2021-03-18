@@ -9,11 +9,14 @@ export default {
   argTypes: {
     unit: {
       type: { name: "string", required: false },
-      defaultValue: "USD",
-      description: "A string to sent to .",
+      description: "The key used to set the currency symbol displayed.",
       table: {
         type: { summary: "string" },
-        defaultValue: { summary: "USD" },
+        defaultValue: {
+          summary: "null",
+          detail:
+            "Accepts: 'null' | 'hundred' | 'thousand' | 'million' | 'billion' | 'trillion'",
+        },
       },
       control: {
         type: "select",

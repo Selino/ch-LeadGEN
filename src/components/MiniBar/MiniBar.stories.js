@@ -11,9 +11,8 @@ export default {
       table: {
         type: {
           summary: "number",
-          detail: "Lorem ipsum dolar",
         },
-        defaultValue: { summary: "50" },
+        defaultValue: { summary: "50", detail: "Accepts whole integers." },
       },
       control: { type: "number" },
     },

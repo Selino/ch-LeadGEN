@@ -10,11 +10,15 @@ export default {
   subcomponents: { DisplayCurrency, MetricTrendIndicator, DisplayUnit },
   argTypes: {
     currency: {
-      defaultValue: "USD",
       description: "A string sent to the DisplayCurrency component.",
       table: {
-        type: { summary: "string", detail: "Lorem ipsum dolar" },
-        defaultValue: { summary: "null" },
+        type: { summary: "string" },
+        defaultValue: "USD",
+        defaultValue: {
+          summary: "null",
+          detail:
+            "Accepts: 'null' | 'hundred' | 'thousand' | 'million' | 'billion' | 'trillion'",
+        },
       },
       control: { type: "select", options: [null, "USD", "EUR", "JPY", "CHF"] },
     },
@@ -22,8 +26,8 @@ export default {
       defaultValue: 999,
       description: "A number or integer value used as the displayed amount.",
       table: {
-        type: { summary: "number", detail: "Three digits is best!" },
-        defaultValue: { summary: "999" },
+        type: { summary: "number" },
+        defaultValue: { summary: "999", detail: "Three digits is best!" },
       },
       control: "number",
     },
@@ -31,24 +35,29 @@ export default {
       description:
         "A number or integer compared against the [value]. This is sent to the MetricTrendIndicator component to determine the up or down arrow display.",
       table: {
-        type: { summary: "number", detail: "Lorem ipsum dolar sit amet." },
+        type: { summary: "number" },
         defaultValue: { summary: "null" },
       },
       control: "number",
     },
     label: {
-      description: "A string that is displayed under the metric value.",
+      description:
+        "A short description displayed under the metric value. Make as short as possible.",
       table: {
-        type: { summary: "string", detail: "Lorem ipsum dolar" },
+        type: { summary: "string" },
         defaultValue: { summary: "null" },
       },
       control: "text",
     },
     unit: {
-      description: "A string to sent to the DisplayUnit component.",
+      description: "A string sent to the DisplayUnit component.",
       table: {
-        type: { summary: "string", detail: "Lorem ipsum dolar" },
-        defaultValue: { summary: "null" },
+        type: { summary: "string" },
+        defaultValue: {
+          summary: "null",
+          detail:
+            "Accepts: 'null' | 'hundred' | 'thousand' | 'million' | 'billion' | 'trillion'",
+        },
       },
       control: {
         type: "select",
