@@ -10,11 +10,11 @@ export default function Badge(props) {
   return (
     <div
       style={{
-        color: colors.white,
-        padding: spacing.tiny,
+        color: variant,
+        padding: spacing.micro,
         fontSize: fontSizes.badge,
         fontWeight: fontWeights.black,
-        backgroundColor: variant,
+        backgroundColor: colors.graysGray5,
         textTransform: "uppercase",
         width: "100%",
         textAlign: "center",
