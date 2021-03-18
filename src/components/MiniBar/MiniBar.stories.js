@@ -6,7 +6,8 @@ export default {
   component: MiniBar,
   argTypes: {
     Perc: {
-      description: "A string sent to the DisplayCurrency component.",
+      description:
+        "A number used to set the fill amount of the bar in increments of 1.",
       table: {
         type: {
           summary: "number",
