@@ -43,7 +43,7 @@ export const getSampleData = () => [
   },
   {
     id: "4",
-    status: "ended",
+    status: "paused",
     serviceLine: "Primary Care",
     name: "Maxi Priest Medical Center",
     spendToDate: 80000,
@@ -99,7 +99,7 @@ export const getSampleData = () => [
   },
   {
     id: "8",
-    status: "ended",
+    status: "paused",
     serviceLine: "Emergency",
     name: "Mountain View Regional Medical Center",
     spendToDate: 620000,

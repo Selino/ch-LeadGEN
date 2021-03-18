@@ -192,6 +192,8 @@ export default function ExecutiveSummary() {
     let variant = colors.graysGray2
     if (status === "live") {
       variant = colors.successInactive
+    } else if (status === "paused") {
+      variant = colors.alertWarningText
     }
     return <Badge text={status} variant={variant} />
   }

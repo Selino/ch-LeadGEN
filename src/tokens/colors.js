@@ -2,12 +2,16 @@
 
 const colors = {
  "alertDanger": "rgba(220, 53, 69, 1)",
+ "alertDangerText": "rgba(202, 43, 58, 1)",
  "alertDangerBackground": "rgba(248, 224, 224, 1)",
  "alertWarning": "rgba(255, 193, 7, 1)",
+ "alertWarningText": "rgba(197, 147, 0, 1)",
  "alertWarningBackground": "rgba(252, 248, 227, 1)",
  "alertSuccess": "rgba(40, 167, 69, 1)",
+ "alertSuccessText": "rgba(35, 132, 56, 1)",
  "alertSuccessBackground": "rgba(223, 240, 216, 1)",
  "alertInfo": "rgba(0, 102, 221, 1)",
+ "alertInfoText": "rgba(0, 102, 221, 1)",
  "alertInfoBackground": "rgba(184, 208, 236, 1)",
  "primarySelected": "rgba(0, 90, 155, 1)",
  "primaryActive": "rgba(0, 105, 180, 1)",
