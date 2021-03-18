@@ -3,9 +3,9 @@ import colors from "../../tokens/colors"
 import fontSizes from "../../tokens/fontSizes"
 import spacing from "../../tokens/spacing"
 import fontWeights from "../../tokens/fontWeights"
-import fontFamilies from "../../tokens/fontFamilies"
 
 export default function PageTitle(props) {
+  const { title = "Page Title" } = props
   return (
     <div
       style={{
@@ -17,7 +17,7 @@ export default function PageTitle(props) {
         fontWeight: fontWeights.light,
       }}
     >
-      {props.title}
+      {title.replace(/[^\w\s]/gi, "")}
     </div>
   )
 }

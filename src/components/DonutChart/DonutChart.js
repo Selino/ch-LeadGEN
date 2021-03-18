@@ -3,8 +3,7 @@ import { Doughnut } from "react-chartjs-2"
 import colors, { primaryInactive } from "../../tokens/colors"
 
 export default function DonutChart(props) {
-  let smallNumber = props.smallNumber ? props.smallNumber : 15
-  let totalNumber = props.totalNumber ? props.totalNumber : 100
+  const { smallNumber = 15, totalNumber = 100 } = props
 
   return (
     <Doughnut

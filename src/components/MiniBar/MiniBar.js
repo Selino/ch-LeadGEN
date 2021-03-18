@@ -3,13 +3,10 @@ import colors from "../../tokens/colors"
 import radii from "../../tokens/radii"
 
 export default function MiniBar(props) {
-  let backGroundColor = props.backGroundColor
-    ? props.backGroundColor
-    : colors.graysGray4
-
-  let forGroundColor = props.forGroundColor
-    ? props.forGroundColor
-    : colors.primaryInactive
+  const {
+    backGroundColor = colors.graysGray4,
+    forGroundColor = colors.primaryInactive,
+  } = props
 
   const myBarBackGround = {
     backgroundColor: backGroundColor,
