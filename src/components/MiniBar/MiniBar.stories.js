@@ -12,7 +12,7 @@ export default {
         type: {
           summary: "number",
         },
-        defaultValue: { summary: "50", detail: "Accepts whole integers." },
+        defaultValue: { summary: "50", detail: "Accepts integers." },
       },
       control: { type: "number" },
     },
@@ -24,7 +24,13 @@ export default {
     backGroundColor: "#E5E5E5",
     forGroundColor: "#428BCA",
   },
-  parameters: {},
+  parameters: {
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=395%3A6",
+    },
+  },
 }
 
 export const Primary = (args) => <MiniBar {...args} />

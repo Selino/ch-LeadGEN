@@ -2,22 +2,20 @@ import React from "react"
 import MetricCard from "./MetricCard"
 import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
 import DisplayUnit from "../DisplayUnit/DisplayUnit"
-import MetricTrendIndicator from "../MetricTrendIndicator/MetricTrendIndicator"
+import TrendIndicator from "../TrendIndicator/TrendIndicator"
 
 export default {
   title: "MetricCard",
   component: MetricCard,
-  subcomponents: { DisplayCurrency, MetricTrendIndicator, DisplayUnit },
+  subcomponents: { DisplayCurrency, TrendIndicator, DisplayUnit },
   argTypes: {
     currency: {
       description: "A string sent to the DisplayCurrency component.",
       table: {
         type: { summary: "string" },
-        defaultValue: "USD",
         defaultValue: {
-          summary: "null",
-          detail:
-            "Accepts: 'null' | 'hundred' | 'thousand' | 'million' | 'billion' | 'trillion'",
+          summary: "USD",
+          detail: "Accepts: 'null' | 'USD' | 'EUR' | 'JPY' | 'CHF'",
         },
       },
       control: { type: "select", options: [null, "USD", "EUR", "JPY", "CHF"] },
@@ -79,7 +77,13 @@ export default {
     label: "Metric Label",
     unit: "thousand",
   },
-  parameters: {},
+  parameters: {
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=522%3A3539",
+    },
+  },
 }
 
 const Template = (args) => <MetricCard {...args} />

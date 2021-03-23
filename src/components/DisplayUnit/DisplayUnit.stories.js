@@ -4,12 +4,11 @@ import DisplayUnit from "./DisplayUnit"
 export default {
   title: "Display Unit",
   component: DisplayUnit,
-  description: "poop",
   subcomponents: {},
   argTypes: {
     unit: {
       type: { name: "string", required: false },
-      description: "The key used to set the currency symbol displayed.",
+      description: "The key used to set the unit symbol displayed.",
       table: {
         type: { summary: "string" },
         defaultValue: {
@@ -34,7 +33,13 @@ export default {
   args: {
     unit: "thousand",
   },
-  parameters: {},
+  parameters: {
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=398%3A5",
+    },
+  },
 }
 
 export const Default = (args) => {

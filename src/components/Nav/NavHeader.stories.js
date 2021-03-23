@@ -1,9 +1,9 @@
 import React from "react"
-import PageTitle from "./PageTitle"
+import NavHeader from "./NavHeader"
 
 export default {
-  title: "PageTitle",
-  component: PageTitle,
+  title: "NavHeader",
+  component: NavHeader,
   argTypes: {
     title: {
       description:
@@ -12,23 +12,17 @@ export default {
         type: {
           summary: "string",
         },
-        defaultValue: { summary: "Page Title" },
+        defaultValue: { summary: "Nav Header" },
       },
       control: { type: "text" },
     },
   },
   args: {
-    title: "Page Title",
+    title: "Nav Header",
   },
-  parameters: {
-    design: {
-      type: "figma",
-      url:
-        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=412%3A37",
-    },
-  },
+  parameters: {},
 }
 
 export const Default = (args) => {
-  return <PageTitle {...args} />
+  return <NavHeader {...args} />
 }

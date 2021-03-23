@@ -1,7 +1,7 @@
 import React from "react"
 import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
 import DisplayUnit from "../DisplayUnit/DisplayUnit"
-import MetricTrendIndicator from "../MetricTrendIndicator/MetricTrendIndicator"
+import TrendIndicator from "../TrendIndicator/TrendIndicator"
 
 export default function MetricCard(props) {
   const {
@@ -30,7 +30,7 @@ export default function MetricCard(props) {
         className='trend-arrow absolute'
         style={{ right: "1rem", top: "1rem" }}
       >
-        <MetricTrendIndicator value={value} baseValue={baseValue} />
+        <TrendIndicator value={value} baseValue={baseValue} />
       </div>
     </div>
   )

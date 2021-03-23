@@ -9,9 +9,11 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-essentials",
     "@storybook/addon-links",
-    "@storybook/addon-docs",
-    "@storybook/addon-controls",
+    // "@storybook/addon-docs",
+    // "@storybook/addon-controls",
+    "storybook-addon-designs",
   ],
+  // Just to get CSS import working in Storybook
   webpackFinal: (config) => {
     return {
       ...config,
