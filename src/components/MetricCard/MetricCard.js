@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
 import DisplayUnit from "../DisplayUnit/DisplayUnit"
 import TrendIndicator from "../TrendIndicator/TrendIndicator"
@@ -34,4 +35,12 @@ export default function MetricCard(props) {
       </div>
     </div>
   )
+}
+
+MetricCard.propTypes = {
+  curreny: PropTypes.string,
+  value: PropTypes.number,
+  baseValue: PropTypes.number,
+  label: PropTypes.string,
+  unit: PropTypes.string,
 }

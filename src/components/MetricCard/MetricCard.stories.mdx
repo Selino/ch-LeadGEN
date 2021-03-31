@@ -1,14 +1,13 @@
-import React from "react"
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks"
 import MetricCard from "./MetricCard"
 import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
 import DisplayUnit from "../DisplayUnit/DisplayUnit"
 import TrendIndicator from "../TrendIndicator/TrendIndicator"
 
-export default {
-  title: "MetricCard",
-  component: MetricCard,
-  subcomponents: { DisplayCurrency, TrendIndicator, DisplayUnit },
-  argTypes: {
+<Meta
+  title='MetricCard'
+  component={MetricCard}
+  argTypes={{
     currency: {
       description: "A string sent to the DisplayCurrency component.",
       table: {
@@ -69,32 +68,26 @@ export default {
         ],
       },
     },
-  },
-  args: {
-    currency: "USD",
-    value: 999,
-    baseValue: 123,
-    label: "Metric Label",
-    unit: "thousand",
-  },
-  parameters: {
-    design: {
-      type: "figma",
-      url:
-        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=522%3A3539",
-    },
-  },
-}
+  }}
+/>
 
-const Template = (args) => <MetricCard {...args} />
+# Metric Card
 
-export const AllOn = Template.bind({})
+A standard clickable Button component.
 
-export const AllOff = Template.bind({})
-AllOff.args = {
-  currency: null,
-  value: 321,
-  baseValue: null,
-  label: null,
-  unit: null,
-}
+export const Template = (args) => <MetricCard {...args} />
+
+<Canvas>
+  <Story
+    name='plain'
+    args={{
+      currency: "USD",
+      value: 321,
+      baseValue: null,
+      label: null,
+      unit: null,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
