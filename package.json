@@ -45,7 +45,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-static-webapp": "expo build:web",
-    "figmagic": "node ./node_modules/figmagic/build/index.js"
+    "figmagic": "node ./node_modules/figmagic/build/index.js",
+    "chromatic": "npx chromatic storybook-static/ --project-token 0f6bc6b6b993"
   },
   "eslintConfig": {
     "extends": [
