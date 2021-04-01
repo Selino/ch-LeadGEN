@@ -44,6 +44,7 @@
     "eject": "craco eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "build-static-webapp": "expo build:web",
     "figmagic": "node ./node_modules/figmagic/build/index.js"
   },
   "eslintConfig": {
