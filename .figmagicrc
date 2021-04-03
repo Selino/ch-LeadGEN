@@ -1,0 +1,13 @@
+{
+  "fontUnit": "rem",
+  "letterSpacingUnit": "em",
+  "opacitiesUnit": "float",
+  "syncGraphics": false,
+  "outputFolderGraphics": "src/graphics",
+  "outputFolderElements": "elements",
+  "outputFolderTokens": "src/tokens",
+  "outputFormatElements": "js",
+  "outputFormatTokens": "js",
+  "spacingUnit": "rem",
+  "usePostscriptFontNames": true
+}

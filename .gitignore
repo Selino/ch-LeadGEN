@@ -19,7 +19,6 @@
 # misc
 .env
 .env.*
-.figmagic*
 .npmrc
 .DS_Store
 .vscode
