@@ -14,7 +14,7 @@ module.exports = {
   // Just to get CSS import working in Storybook
   webpackFinal: async (config) => {
     config.module.rules.push({
-      test: /\,css&/,
+      test: /\.css$/,
       use: [
         {
           loader: "postcss-loader",
