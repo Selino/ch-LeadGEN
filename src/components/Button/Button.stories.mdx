@@ -1,14 +1,12 @@
-import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks"
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks"
 import Button from "./Button"
-import { Logo } from "../../images/90.jpeg"
 
 <Meta
   title='Button'
   component={Button}
   argTypes={{
     variant: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi recusandae doloribus dolores, molestiae suscipit autem sint commodi ex, laboriosam rerum sunt fugiat asperiores cum debitis?",
+      description: "Test",
       table: {
         type: { summary: "string" },
         defaultValue: {
@@ -23,46 +21,108 @@ import { Logo } from "../../images/90.jpeg"
       },
     },
   }}
+  parameters={{
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=42%3A1418",
+    },
+  }}
 />
 
 # Buttons
-
-![Philadelphia's Magic Gardens. This place was so cool!](/logo192.png "Philadelphia's Magic Gardens")
 
 <Canvas>
   <Story
     name='primary'
     args={{
+      variant: "primary",
+      text: "Button",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='secondary'
+    args={{
       variant: "secondary",
-      text: "Add User",
+      text: "Secondary",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='success'
+    args={{
+      variant: "success",
+      text: "Success",
     }}
   >
     {Template.bind({})}
   </Story>
 </Canvas>
 
-In this section, we will look at the hierarchy of buttons and the language that they communicate. Button actions are not determined by how they look (although users should be able to learn what the buttons mean by their styling), but rather by how they are used.
+<ArgsTable of={Button} />
 
 # Usage Guidelines
+
+In this section, we will look at the hierarchy of buttons and the language that they communicate. Button actions are not determined by how they look (although users should be able to learn what the buttons mean by their styling), but rather by how they are used.
 
 ## Call to action (CTA / C2A)
 
 A call to action button, depending on the situation, will usually prompt users to sign up/register/buy now/etc. CTA buttons should be used where the platform wants to strongly suggest something that the user should do.
 
+<Canvas>
+  <Story
+    name='Call to Action'
+    args={{
+      variant: "success",
+      text: "Sign Up Now!",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
 ## Primary action
 
 While a CTA button and a primary button can look the same, I like to separate them out. While CTA buttons are what the interface would want you to do, primary buttons should be a strong visual indicator to help the user to complete their journey. Primary buttons should be used in situations where the user may want to go ‘next’, ‘complete’, ‘start’, etc.
+
+<Canvas>
+  <Story
+    name='Primary Action'
+    args={{
+      variant: "primary",
+      text: "Next",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
 
 ## Secondary action
 
 Secondary buttons are the ‘go back’ to the primary button’s ‘next’, or the ‘cancel’ button to the ‘submit’ button. Secondary buttons are the alternative we give users to the primary action.
 
-## Tertiary action
-
-Tertiary buttons are usually used for miscellaneous actions: the action is important, but may not be what the user is looking to do right then. This is things like ‘add friend’, ‘add new’, ‘edit’, or ‘delete’, provided that they aren’t a primary action.
-
-## Icon with a label button
-
-Icon buttons have grown in popularity, but some buttons still need a label to ensure that the button communicates properly.
+<Canvas>
+  <Story
+    name='Secondary Action'
+    args={{
+      variant: "outline-secondary",
+      text: "Back",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Primary Action 2'
+    args={{
+      variant: "primary",
+      text: "Next",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
 
 export const Template = (args) => <Button {...args}>{args.text}</Button>
