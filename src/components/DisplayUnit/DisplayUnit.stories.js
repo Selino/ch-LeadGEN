@@ -2,7 +2,7 @@ import React from "react"
 import DisplayUnit from "./DisplayUnit"
 
 export default {
-  title: "Display Unit",
+  title: "Components/Metrics/Display Unit",
   component: DisplayUnit,
   subcomponents: {},
   argTypes: {

@@ -2,7 +2,7 @@ import React from "react"
 import MiniBar from "./MiniBar"
 
 export default {
-  title: "MiniBar",
+  title: "Components/Metrics/MiniBar",
   component: MiniBar,
   argTypes: {
     Perc: {

@@ -5,7 +5,7 @@ import DisplayUnit from "../DisplayUnit/DisplayUnit"
 import TrendIndicator from "../TrendIndicator/TrendIndicator"
 
 export default {
-  title: "MetricCard",
+  title: "Components/Metrics/MetricCard",
   component: MetricCard,
   subcomponents: { DisplayCurrency, TrendIndicator, DisplayUnit },
   argTypes: {

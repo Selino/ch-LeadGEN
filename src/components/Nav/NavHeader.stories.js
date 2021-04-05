@@ -2,7 +2,7 @@ import React from "react"
 import NavHeader from "./NavHeader"
 
 export default {
-  title: "NavHeader",
+  title: "Components/Navigation/NavHeader",
   component: NavHeader,
   argTypes: {
     title: {

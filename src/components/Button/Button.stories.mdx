@@ -2,7 +2,7 @@ import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks"
 import Button from "./Button"
 
 <Meta
-  title='Button'
+  title='Components/Buttons/Button'
   component={Button}
   argTypes={{
     variant: {
@@ -37,7 +37,7 @@ import Button from "./Button"
     name='primary'
     args={{
       variant: "primary",
-      text: "Button",
+      text: "Primary",
     }}
   >
     {Template.bind({})}
@@ -56,6 +56,15 @@ import Button from "./Button"
     args={{
       variant: "success",
       text: "Success",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='outline-secondary'
+    args={{
+      variant: "outline-secondary",
+      text: "Outline Secondary",
     }}
   >
     {Template.bind({})}

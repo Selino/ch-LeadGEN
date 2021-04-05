@@ -1,7 +1,7 @@
 import DonutChart from "./DonutChart"
 
 export default {
-  title: "DonutChart",
+  title: "Components/Metrics/DonutChart",
   component: DonutChart,
   argTypes: {
     smallNumber: {

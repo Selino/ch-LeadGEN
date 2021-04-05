@@ -2,7 +2,7 @@ import React from "react"
 import DisplayCurrency from "./DisplayCurrency"
 
 export default {
-  title: "Display Currency",
+  title: "Components/Metrics/Display Currency",
   component: DisplayCurrency,
   description: "",
   subcomponents: {},

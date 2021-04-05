@@ -2,7 +2,7 @@ import React from "react"
 import TrendIndicator from "./TrendIndicator"
 
 export default {
-  title: "TrendIndicator",
+  title: "Components/Metrics/TrendIndicator",
   component: TrendIndicator,
   argTypes: {
     value: {

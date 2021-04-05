@@ -2,7 +2,7 @@ import React from "react"
 import PageTitle from "./PageTitle"
 
 export default {
-  title: "PageTitle",
+  title: "Components/Navigation/PageTitle",
   component: PageTitle,
   argTypes: {
     title: {
