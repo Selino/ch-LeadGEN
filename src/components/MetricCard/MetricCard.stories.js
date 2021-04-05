@@ -7,6 +7,13 @@ import TrendIndicator from "../TrendIndicator/TrendIndicator"
 export default {
   title: "Components/Metrics/MetricCard",
   component: MetricCard,
+  decorators: [
+    (Story) => (
+      <div style={{ width: "240px" }}>
+        <Story />
+      </div>
+    ),
+  ],
   subcomponents: { DisplayCurrency, TrendIndicator, DisplayUnit },
   argTypes: {
     currency: {
