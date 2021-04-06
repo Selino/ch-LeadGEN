@@ -5,7 +5,7 @@ import DisplayUnit from "../DisplayUnit/DisplayUnit"
 import TrendIndicator from "../TrendIndicator/TrendIndicator"
 
 /**
-Use the MetricCard to display insightful data in small chunks. These cards stretch to fill their parent on the horizontal axis and stack when teh parent resizes on platform breakpoints.
+Use the MetricCard to display insightful data in small chunks. These cards stretch to fill their parent on the horizontal axis and stack when the parent resizes on platform breakpoints.
 
 - use multiple cards together to form dashboards
 - use text only cards to convey insights in human readable copy
