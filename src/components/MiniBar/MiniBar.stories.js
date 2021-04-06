@@ -5,7 +5,7 @@ export default {
   title: "Components/Metrics/MiniBar",
   component: MiniBar,
   argTypes: {
-    Perc: {
+    perc: {
       description:
         "A number used to set the fill amount of the bar in increments of 1.",
       table: {
@@ -20,11 +20,13 @@ export default {
     forGroundColor: { control: "color" },
   },
   args: {
-    Perc: 50,
+    perc: 50,
     backGroundColor: "#E5E5E5",
     forGroundColor: "#428BCA",
   },
   parameters: {
+    componentSubtitle:
+      "An inline graph that quickly provides visual context for numerical metrics.",
     design: {
       type: "figma",
       url:

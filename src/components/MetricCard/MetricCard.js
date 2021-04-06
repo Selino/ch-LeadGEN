@@ -4,6 +4,17 @@ import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
 import DisplayUnit from "../DisplayUnit/DisplayUnit"
 import TrendIndicator from "../TrendIndicator/TrendIndicator"
 
+/**
+Use the MetricCard to display insightful data in small chunks. These cards stretch to fill their parent on the horizontal axis and stack when teh parent resizes on platform breakpoints.
+
+- use multiple cards together to form dashboards
+- use text only cards to convey insights in human readable copy
+
+## Trend Indicator
+
+When the baseValue is provided it is compared to the value prop. The up / down arrows indicate if the difference is higher, lower, or equal.
+**/
+
 export default function MetricCard(props) {
   const {
     currency = null,
@@ -38,7 +49,7 @@ export default function MetricCard(props) {
 }
 
 MetricCard.propTypes = {
-  curreny: PropTypes.string,
+  currency: PropTypes.string,
   value: PropTypes.number,
   baseValue: PropTypes.number,
   label: PropTypes.string,

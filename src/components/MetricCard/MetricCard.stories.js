@@ -7,13 +7,6 @@ import TrendIndicator from "../TrendIndicator/TrendIndicator"
 export default {
   title: "Components/Metrics/MetricCard",
   component: MetricCard,
-  decorators: [
-    (Story) => (
-      <div style={{ width: "240px" }}>
-        <Story />
-      </div>
-    ),
-  ],
   subcomponents: { DisplayCurrency, TrendIndicator, DisplayUnit },
   argTypes: {
     currency: {
@@ -85,6 +78,8 @@ export default {
     unit: "thousand",
   },
   parameters: {
+    componentSubtitle:
+      "Displays a single metric data point to provide insight.",
     design: {
       type: "figma",
       url:
@@ -93,7 +88,11 @@ export default {
   },
 }
 
-const Template = (args) => <MetricCard {...args} />
+const Template = (args) => (
+  <div className='wrapper' style={{ width: "50%" }}>
+    <MetricCard {...args} />
+  </div>
+)
 
 export const AllOn = Template.bind({})
 

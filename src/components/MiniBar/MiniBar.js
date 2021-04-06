@@ -1,6 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 import colors from "../../tokens/colors"
 import radii from "../../tokens/radii"
+
+/**
+- Use the MiniBar when presented metrics are missing scope.
+- Combine with tooltips to allow more detailed information.
+**/
 
 export default function MiniBar(props) {
   const {
@@ -21,7 +27,7 @@ export default function MiniBar(props) {
 
   const myBarForGround = {
     backgroundColor: forGroundColor,
-    width: props.Perc + "%",
+    width: props.perc + "%",
     height: "100%",
   }
 
@@ -30,4 +36,10 @@ export default function MiniBar(props) {
       <div style={myBarForGround}></div>
     </div>
   )
+}
+
+MiniBar.propTypes = {
+  perc: PropTypes.number,
+  backGroundColor: PropTypes.string,
+  forGroundColor: PropTypes.string,
 }
