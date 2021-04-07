@@ -150,7 +150,7 @@ export default function ExecutiveSummary() {
       <div>
         {cell}
         <MiniBar
-          Perc={Math.round(myPerc)}
+          perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
           forGroundColor={colors.primaryInactive}
         />
@@ -170,7 +170,7 @@ export default function ExecutiveSummary() {
       <div>
         ${spend}k
         <MiniBar
-          Perc={Math.round(myPerc)}
+          perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
           forGroundColor={colors.alertSuccess}
         />
