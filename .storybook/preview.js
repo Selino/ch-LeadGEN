@@ -4,6 +4,17 @@ import "../src/index.css"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  options: {
+    storySort: {
+      order: [
+        "Start Here",
+        "Design Guidelines",
+        ["Intro", "Brand", "Competition"],
+        "Platform",
+        ["Intro", "Icons", "DesignTokens"],
+      ],
+    },
+  },
 }
 
 const cssReq = require.context("!!raw-loader!../src", true, /.\.css$/)
