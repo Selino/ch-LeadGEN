@@ -32,8 +32,7 @@ export default {
     totalNumber: 100,
   },
   parameters: {
-    componentSubtitle:
-      "Displays an image that represents a user or organization",
+    componentSubtitle: "Lorem ipsum dolar sit amet.",
     design: {
       type: "figma",
       url:
