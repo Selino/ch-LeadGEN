@@ -3,7 +3,7 @@ import { ReactComponent as SmArrowDown } from "../../graphics/icoCarretDown.svg"
 
 export default function CompanyDropdown(props) {
   return (
-    <div className='text-white flex flex-nowrap my-0 mr-4 border-collapse'>
+    <div className='text-white flex flex-nowrap my-0 border-collapse'>
       <div className='flex-nowrap mr-2 my-0'>
         <div className='text-base text-right flex-nowrap leading-none'>
           User Name
