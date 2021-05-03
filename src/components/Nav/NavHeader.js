@@ -1,8 +1,8 @@
 import React from "react"
-import { Navbar, NavDropdown, Button } from "react-bootstrap"
+import { Navbar, NavDropdown, Dropdown } from "react-bootstrap"
 import { ReactComponent as Logo } from "../../graphics/logoHexagons.svg"
 import { ReactComponent as LogoChText } from "../../graphics/logoChText.svg"
-import { ReactComponent as LogoAppName } from "../../graphics/logoLeadnav.svg"
+import { ReactComponent as LogoAppName } from "../../graphics/logoLeadgen.svg"
 import { ReactComponent as NavLocation } from "../../graphics/icoLocation.svg"
 import { ReactComponent as NavHamburger } from "../../graphics/icoHamburger.svg"
 import { ReactComponent as VerticalRule } from "../../graphics/verticalRule.svg"
@@ -28,13 +28,12 @@ export default function NavHeader(props) {
           title={<CompanyDropdown className='svg-light' />}
           id='nav-company-dropdown'
         >
-          <NavDropdown.Item eventKey='4.1'>Action</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2'>Another action</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.3'>
-            Something else here
-          </NavDropdown.Item>
+          <Dropdown.Header>Switch Company</Dropdown.Header>
+          <NavDropdown.Item eventKey='4.1'>Company A</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.2'>Company B</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.3'>Company C</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item eventKey='4.4'>Separated link</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.4'>Admin</NavDropdown.Item>
         </NavDropdown>
 
         <NavDropdown
@@ -42,6 +41,7 @@ export default function NavHeader(props) {
           title={<NavLocation className='svg-light' />}
           id='nav-facility-dropdown'
         >
+          <Dropdown.Header>Include Facilities</Dropdown.Header>
           <NavDropdown.Item eventKey='4.1'>
             Mountain View Regional Medical Center
           </NavDropdown.Item>
@@ -56,9 +56,15 @@ export default function NavHeader(props) {
           title={<NavHamburger className='svg-light' />}
           id='nav-user-dropdown'
         >
+          <Dropdown.Header>Change Views</Dropdown.Header>
           <NavDropdown.Item eventKey='4.1'>Campaign Overview</NavDropdown.Item>
           <NavDropdown.Item eventKey='4.2'>Executive Summary</NavDropdown.Item>
           <NavDropdown.Divider />
+          <Dropdown.Header>Switch App</Dropdown.Header>
+          <NavDropdown.Item eventKey='4.4'>LeadROI</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.4'>LeadNav</NavDropdown.Item>
+          <NavDropdown.Divider />
+
           <NavDropdown.Item eventKey='4.4'>Log Out</NavDropdown.Item>
         </NavDropdown>
       </Navbar.Collapse>
