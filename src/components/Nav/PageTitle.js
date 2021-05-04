@@ -9,7 +9,7 @@ export default function PageTitle(props) {
   return (
     <div
       style={{
-        paddingTop: spacing.small,
+        paddingTop: "5rem",
         paddingLeft: spacing.medium,
         fontStyle: "italic",
         fontSize: fontSizes.h4,

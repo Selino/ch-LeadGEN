@@ -29,7 +29,3 @@ function App() {
 }
 
 export default App
-
-// <MetricCard number='82' label='Conversions' unit='' />
-// <MetricCard currency='USD' number='205' label='CPC' />
-// <MetricCard number='92' label='Live' />
