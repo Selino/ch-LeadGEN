@@ -7,6 +7,7 @@ import { ReactComponent as NavLocation } from "../../graphics/icoLocation.svg"
 import { ReactComponent as NavHamburger } from "../../graphics/icoHamburger.svg"
 import { ReactComponent as VerticalRule } from "../../graphics/verticalRule.svg"
 import CompanyDropdown from "./CompanyDropdown"
+import FacilityDropdown from "./FacilityDropdown"
 
 export default function NavHeader(props) {
   return (
@@ -42,13 +43,7 @@ export default function NavHeader(props) {
           id='nav-facility-dropdown'
         >
           <Dropdown.Header>Include Facilities</Dropdown.Header>
-          <NavDropdown.Item eventKey='4.1'>
-            Mountain View Regional Medical Center
-          </NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2'>Another action</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.3'>
-            Something else here
-          </NavDropdown.Item>
+          <FacilityDropdown />
         </NavDropdown>
 
         <NavDropdown
