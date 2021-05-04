@@ -76,13 +76,6 @@ const Emotion = styled.div`
     margin-left: 1rem;
   }
 
-  /* pagination */
-
-  .react-bootstrap-table-pagination {
-    padding: 0 16px;
-    text-align: left;
-  }
-
   .react-bootstrap-table-pagination-total {
     font-size: ${fontSizes.sub};
   }
@@ -136,6 +129,17 @@ const Emotion = styled.div`
 
   .react-bootstrap-table table {
     table-layout: auto;
+  }
+
+  /* pagination */
+
+  .react-bootstrap-table-pagination {
+    padding: 0 1rem 1rem;
+    text-align: left;
+  }
+
+  .pagination {
+    margin-bottom: 0 !important;
   }
 `
 

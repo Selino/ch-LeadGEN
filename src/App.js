@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <NavHeader />
       <PageTitle title='Campaign Overview' />
-      <main className='p-4'>
+      <main className='p-3'>
         <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
           <MetricCard
             currency='USD'
