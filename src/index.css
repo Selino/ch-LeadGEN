@@ -26,4 +26,7 @@
   .badge {
     @apply text-badge text-center;
   }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
 }

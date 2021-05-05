@@ -8,7 +8,9 @@ function App() {
   return (
     <div className='App'>
       <NavHeader />
-      <PageTitle title='Campaign Overview' />
+      <div className='mt-20 pl-4'>
+        <PageTitle title='Campaign Overview' />
+      </div>
       <main className='p-3'>
         <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
           <MetricCard

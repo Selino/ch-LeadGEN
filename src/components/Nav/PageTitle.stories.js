@@ -30,5 +30,9 @@ export default {
 }
 
 export const Default = (args) => {
-  return <PageTitle {...args} />
+  return (
+    <div>
+      <PageTitle {...args} />
+    </div>
+  )
 }

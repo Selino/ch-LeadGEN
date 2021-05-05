@@ -8,9 +8,8 @@ export default function PageTitle(props) {
   const { title = "Page Title" } = props
   return (
     <div
+      id={title}
       style={{
-        paddingTop: "5rem",
-        paddingLeft: spacing.medium,
         fontStyle: "italic",
         fontSize: fontSizes.h4,
         color: colors.brandLeadGen,

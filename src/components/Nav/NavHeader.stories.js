@@ -10,5 +10,9 @@ export default {
 }
 
 export const Default = (args) => {
-  return <NavHeader {...args} />
+  return (
+    <div>
+      <NavHeader {...args} />
+    </div>
+  )
 }
