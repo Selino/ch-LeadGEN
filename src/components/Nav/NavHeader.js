@@ -12,7 +12,7 @@ import FacilityDropdown from "./FacilityDropdown"
 export default function NavHeader(props) {
   return (
     <Navbar
-      fixed='top'
+      fixed={props.fixed}
       className='p-2 mx-auto bg-brand text-white flex justify-between'
     >
       <Navbar.Brand>

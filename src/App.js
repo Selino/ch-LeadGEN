@@ -7,7 +7,7 @@ import PageTitle from "./components/Nav/PageTitle"
 function App() {
   return (
     <div className='App'>
-      <NavHeader />
+      <NavHeader fixed='top' />
       <div className='mt-20 pl-4'>
         <PageTitle title='Campaign Overview' />
       </div>
