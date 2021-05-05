@@ -9,10 +9,14 @@ import { ReactComponent as VerticalRule } from "../../graphics/verticalRule.svg"
 import CompanyDropdown from "./CompanyDropdown"
 import FacilityDropdown from "./FacilityDropdown"
 
+/**
+NavHeader is a responsive and clean navigation bar guiding the user by visual cues. It contains navigation via the customizable drop-down menus. The NavHeader can be designed to include color schemes, company name, and user name in addition to the dropdown menus.
+**/
+
 export default function NavHeader(props) {
   return (
     <Navbar
-      fixed={props.fixed}
+      fixed={props.Position}
       className='p-2 mx-auto bg-brand text-white flex justify-between'
     >
       <Navbar.Brand>
@@ -25,17 +29,7 @@ export default function NavHeader(props) {
       </Navbar.Brand>
 
       <Navbar.Collapse className='justify-content-end'>
-        <NavDropdown
-          title={<CompanyDropdown className='svg-light' />}
-          id='nav-company-dropdown'
-        >
-          <Dropdown.Header>Switch Company</Dropdown.Header>
-          <NavDropdown.Item eventKey='4.1'>Company A</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2'>Company B</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.3'>Company C</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item eventKey='4.4'>Admin</NavDropdown.Item>
-        </NavDropdown>
+        <CompanyDropdown className='svg-light' />
 
         <NavDropdown
           alignRight
