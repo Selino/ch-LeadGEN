@@ -34,6 +34,8 @@ export default {
     unit: "thousand",
   },
   parameters: {
+    componentSubtitle:
+      "Show a single unit based on the metric numerical system.",
     design: {
       type: "figma",
       url:

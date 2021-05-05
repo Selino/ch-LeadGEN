@@ -26,7 +26,7 @@ export default {
   },
   parameters: {
     componentSubtitle:
-      "An inline graph that quickly provides visual context for numerical metrics.",
+      "An inline horizontal bar chart that quickly provides visual context for numerical metrics.",
     design: {
       type: "figma",
       url:
@@ -35,5 +35,4 @@ export default {
   },
 }
 
-export const Primary = (args) => <MiniBar {...args} />
-export const Success = (args) => <MiniBar {...args} forGroundColor='green' />
+export const Default = (args) => <MiniBar {...args} />

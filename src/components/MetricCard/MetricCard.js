@@ -9,10 +9,6 @@ Use the MetricCard to display insightful data in small chunks. These cards stret
 
 - use multiple cards together to form dashboards
 - use text only cards to convey insights in human readable copy
-
-## Trend Indicator
-
-When the baseValue is provided it is compared to the value prop. The up / down arrows indicate if the difference is higher, lower, or equal.
 **/
 
 export default function MetricCard(props) {

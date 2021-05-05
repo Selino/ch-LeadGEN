@@ -29,6 +29,8 @@ export default {
     baseValue: 123,
   },
   parameters: {
+    componentSubtitle:
+      "A single icon to show if the trend is going up, down, or has no change at all.",
     design: {
       type: "figma",
       url:
@@ -37,19 +39,23 @@ export default {
   },
 }
 
-export const UpwardTrend = (args) => {
+export const Default = (args) => {
   return <TrendIndicator {...args} />
 }
 
 const Template = (args) => <TrendIndicator {...args} />
 
-export const DownwardTrend = Template.bind({})
-DownwardTrend.args = {
-  value: 100,
-  baseValue: 123,
-}
-export const NoChange = Template.bind({})
-NoChange.args = {
-  value: 123,
-  baseValue: 123,
-}
+// export const DownwardTrend = Template.bind({})
+// DownwardTrend.args = {
+//   value: 100,
+//   baseValue: 123,
+// }
+// export const NoChange = Template.bind({})
+// NoChange.parameters = {
+//   title:
+//     "An inline graph that quickly provides visual context for numerical metrics.",
+// }
+// NoChange.args = {
+//   value: 123,
+//   baseValue: 123,
+// }

@@ -79,7 +79,7 @@ export default {
   },
   parameters: {
     componentSubtitle:
-      "Displays a single metric data point to provide insight.",
+      "Displays a single metric data point on a card to provide insight.",
     design: {
       type: "figma",
       url:

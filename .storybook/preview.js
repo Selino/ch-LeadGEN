@@ -11,7 +11,7 @@ export const parameters = {
         "Design Guidelines",
         ["Branding", "Competition"],
         "Platform",
-        ["Intro", "Icons", "DesignTokens"],
+        ["Tokens", "Icons"],
       ],
     },
   },

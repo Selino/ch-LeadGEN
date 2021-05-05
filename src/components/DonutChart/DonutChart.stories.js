@@ -32,7 +32,8 @@ export default {
     totalNumber: 100,
   },
   parameters: {
-    componentSubtitle: "Lorem ipsum dolar sit amet.",
+    componentSubtitle:
+      "Just like pie charts, doughnut charts help show the relationships of parts to a whole with each ring corresponding to a data series.",
     design: {
       type: "figma",
       url:

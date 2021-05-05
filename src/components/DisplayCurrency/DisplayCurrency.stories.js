@@ -27,6 +27,8 @@ export default {
     code: "USD",
   },
   parameters: {
+    componentSubtitle:
+      "Show a single currency symbol based on the global standard.",
     design: {
       type: "figma",
       url:
