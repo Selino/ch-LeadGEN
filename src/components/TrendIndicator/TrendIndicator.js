@@ -21,7 +21,7 @@ export default function TrendIndicator(props) {
         <ArrowDown className='svg-primary' />
       )}
       {value === baseValue && baseValue != null && (
-        <Equal className='svg-primary' />
+        <Equal className='svg-secondary' />
       )}
       {baseValue == null && <></>}
     </>

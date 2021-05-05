@@ -11,7 +11,7 @@ export default {
         type: {
           summary: "string",
         },
-        defaultValue: { summary: "null", detail: "Accepts string." },
+        defaultValue: { summary: "null", detail: "null | top" },
       },
       control: {
         type: "select",
@@ -19,8 +19,15 @@ export default {
       },
     },
   },
-  args: { Position: "null" },
-  parameters: {},
+  args: { Position: "" },
+  parameters: {
+    componentSubtitle: "",
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=403%3A20",
+    },
+  },
 }
 
 export const Default = (args) => {

@@ -5,8 +5,15 @@ export default {
   title: "Components/Navigation/Company Dropdown",
   component: CompanyDropdown,
   argTypes: {},
-  args: { fixed: "fixed" },
-  parameters: {},
+  args: {},
+  parameters: {
+    componentSubtitle: "",
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=334%3A248",
+    },
+  },
 }
 
 export const Default = (args) => {
