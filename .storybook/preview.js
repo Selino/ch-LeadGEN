@@ -9,7 +9,7 @@ export const parameters = {
       order: [
         "Start Here",
         "Design Guidelines",
-        ["Branding", "Competition"],
+        ["Branding"],
         "Platform",
         ["Tokens", "Icons"],
       ],

@@ -3,7 +3,7 @@ import Logo from "/src/images/StoryBookLogo.svg"
 
 export default create({
   base: "light",
-  brandTitle: "My custom storybook",
-  brandUrl: "https://example.com",
+  brandTitle: "Clariture Design System",
+  brandUrl: "",
   brandImage: Logo,
 })
