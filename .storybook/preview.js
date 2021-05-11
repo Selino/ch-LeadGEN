@@ -32,7 +32,7 @@ const lessTokenFiles = lessReq
   .keys()
   .map((filename) => ({ filename, content: lessReq(filename).default }))
 
-const svgIconsReq = require.context("!!raw-loader!../src", true, /.\.svg$/)
-const svgIconTokenFiles = svgIconsReq
-  .keys()
-  .map((filename) => ({ filename, content: svgIconsReq(filename).default }))
+// const svgIconsReq = require.context("!!raw-loader!../src", true, /.\.svg$/)
+// const svgIconTokenFiles = svgIconsReq
+//   .keys()
+//   .map((filename) => ({ filename, content: svgIconsReq(filename).default }))

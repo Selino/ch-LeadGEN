@@ -44,7 +44,7 @@ export default function NavHeader(props) {
           alignRight
           title={<NavHamburger className='svg-light' />}
           id='nav-user-dropdown'
-          class='test'
+          className='test'
         >
           <Dropdown.Header>Change Views</Dropdown.Header>
           <NavDropdown.Item eventKey='4.1'>Campaign Overview</NavDropdown.Item>

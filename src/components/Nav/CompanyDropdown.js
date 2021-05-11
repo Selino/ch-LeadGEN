@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, NavDropdown, Dropdown } from "react-bootstrap"
+import { NavDropdown, Dropdown } from "react-bootstrap"
 import { ReactComponent as SmArrowDown } from "../../graphics/icoCarretDown.svg"
 
 export default function CompanyDropdown(props) {
