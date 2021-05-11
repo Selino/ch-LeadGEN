@@ -10,7 +10,9 @@ function useDynamicSVGImport(name, options = {}) {
     setLoading(true)
     const importIcon = async () => {
       try {
-        ImportedIconRef.current = (await import(`./${name}.svg`)).ReactComponent
+        ImportedIconRef.current = (
+          await import(`../graphics/${name}.svg`)
+        ).ReactComponent
         if (onCompleted) {
           onCompleted(name, ImportedIconRef.current)
         }
@@ -50,8 +52,8 @@ const Icon = ({ name, onCompleted, onError, ...rest }) => {
   return null
 }
 
-export default function App() {
-  const [name, setName] = useState("svg1")
+export default function DisplayIcon() {
+  const [name, setName] = useState("icoArrowCircleDown")
 
   const handleOnCompleted = useCallback(
     (iconName) => console.log(`${iconName} successfully loaded`),
@@ -61,36 +63,13 @@ export default function App() {
   const handleIconError = useCallback((err) => console.error(err.message), [])
 
   return (
-    <div className='App'>
-      <button
-        onClick={() =>
-          setName((prevName) => (prevName === "svg1" ? "svg2" : "svg1"))
-        }
-      >
-        Change Icon
-      </button>
-      <section>
-        <Icon
-          name={name}
-          fill='gray'
-          onCompleted={handleOnCompleted}
-          onError={handleIconError}
-        />
-        <Icon
-          name='svg1'
-          fill='gray'
-          width='300'
-          onCompleted={handleOnCompleted}
-          onError={handleIconError}
-        />
-        <Icon
-          name='svg2'
-          fill='darkblue'
-          height='100'
-          onCompleted={handleOnCompleted}
-          onError={handleIconError}
-        />
-      </section>
+    <div>
+      <Icon
+        name={name}
+        fill='gray'
+        onCompleted={handleOnCompleted}
+        onError={handleIconError}
+      />
     </div>
   )
 }

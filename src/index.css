@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  .svg-light > path {
+  .svg-light > svg > path {
     @apply fill-current text-white;
   }
 
-  .svg-primary > path {
+  .svg-primary > svg > path {
     @apply fill-current text-primary;
   }
 
-  .svg-secondary > path {
+  .svg-secondary > svg > path {
     @apply fill-current text-gray3;
   }
 
-  .svg-success > path {
+  .svg-success > svg > path {
     @apply fill-current text-success;
   }
 
-  .svg-danger > path {
+  .svg-danger > svg > path {
     @apply fill-current text-danger;
   }
 
