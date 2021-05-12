@@ -18,7 +18,6 @@ export default function CompanyDropdown(props) {
           <ReactSVG
             src='/graphics/icoCarretDown.svg'
             className='svg-light my-auto'
-            style={{ width: "10px" }}
           />
         </div>
       }
