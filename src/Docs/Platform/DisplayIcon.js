@@ -5,7 +5,7 @@ function DisplayIcon({ name = "icoCalendar", styled = "h-8" }) {
   return (
     <div className=''>
       <ReactSVG src={"/graphics/" + name + ".svg"} className='svg-xl' />
-      <div className='text-center text-sm text-gray1 mt-1'>{name}</div>
+      <div className='text-center text-sm text-brand mt-1'>{name}</div>
     </div>
   )
 }
@@ -21,6 +21,17 @@ const ShowAllIcons = () => {
     "icoChevronL",
     "icoChevronR",
     "icoCloseX",
+    "icoCloudDownload",
+    "icoEqualCircle",
+    "icoExclamationTriangle",
+    "icoGripVertical",
+    "icoHamburger",
+    "icoInfoCircle",
+    "icoLocation",
+    "icoPhone",
+    "icoSearch",
+    "icoSliders",
+    "icoSquare",
   ]
 
   return (

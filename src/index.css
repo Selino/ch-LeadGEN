@@ -28,7 +28,7 @@
   }
 
   .svg-xl > svg > path {
-    @apply fill-current text-gray1;
+    @apply fill-current text-brand;
   }
 
   .badge {
