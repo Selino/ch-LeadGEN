@@ -3,7 +3,6 @@ import NavHeader from "./components/Nav/NavHeader"
 import ExecutiveSummary from "./components/ExecutiveSummary/ExecutiveSummary"
 import MetricCard from "./components/MetricCard/MetricCard"
 import PageTitle from "./components/Nav/PageTitle"
-import DisplayIcon from "./components/Icon"
 
 function App() {
   return (
@@ -27,7 +26,6 @@ function App() {
         </div>
         <ExecutiveSummary />
       </main>
-      <DisplayIcon name='icoCalendar' />
     </div>
   )
 }
