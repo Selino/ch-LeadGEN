@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/addon-docs/blocks"
-import DisplayIcon from "./DisplayIcon"
+import ShowAllIcons from "./DisplayIcon"
 
 <Meta title='Platform/Icons' />
 
@@ -7,14 +7,18 @@ import DisplayIcon from "./DisplayIcon"
 
 An icon is a small graphical representation of a program, feature, or file. When you click or double-click an icon, the associated file or program opens or an action is performed. For example, if you were to double-click My Computer icon, it would open Windows Explorer. Icons are a component of GUI operating systems, including Apple macOS X and Microsoft Windows. Icons help users quickly identify the type of file represented by the icon. The image is an example of "My Computer" icons in different versions of Microsoft Windows.
 
-<p></p>
+[View Utility Icons](#utility) | [View Doctype Icons](#doctype)
 
-## Utility
+<br />
 
-Utility icons are simple, single-color glyphs that identify labels and actions across form factors
+## <a id="utility"></a> Utility
 
-<DisplayIcon name='icoArrowCircleDown' />
+Utility icons are simple, single-color glyphs that identify labels and actions across form factors.
 
-## Doctype
+<ShowAllIcons type='utils' />
 
-Doctype icons represent document file formats
+## <a id="doctype"></a> Doctype
+
+Doctype icons represent document file formats.
+
+<ShowAllIcons type='docs' color='#CCC' />
