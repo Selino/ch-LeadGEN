@@ -23,6 +23,14 @@
     @apply fill-current text-danger;
   }
 
+  .svg-xl > svg {
+    @apply w-9 h-9 m-auto;
+  }
+
+  .svg-xl > svg > path {
+    @apply fill-current text-gray1;
+  }
+
   .badge {
     @apply text-badge text-center;
   }

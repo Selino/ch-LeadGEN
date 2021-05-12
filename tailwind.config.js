@@ -24,8 +24,8 @@ module.exports = {
     },
     extend: {
       spacing: {
-        "128": "32rem",
-        "144": "36rem",
+        128: "32rem",
+        144: "36rem",
       },
       borderRadius: {
         "4xl": "2rem",
@@ -38,6 +38,9 @@ module.exports = {
         badge: fontSizes.badge,
       },
       screens: {
+        mobile: "320px",
+        // => @media (min-width: 320px) { ... }
+
         tablet: "640px",
         // => @media (min-width: 640px) { ... }
 

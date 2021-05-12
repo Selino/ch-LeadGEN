@@ -1,75 +1,35 @@
-import React, { useEffect, useRef, useState, useCallback } from "react"
+import React from "react"
+import { ReactSVG } from "react-svg"
 
-function useDynamicSVGImport(name, options = {}) {
-  const ImportedIconRef = useRef()
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState()
-
-  const { onCompleted, onError } = options
-  useEffect(() => {
-    setLoading(true)
-    const importIcon = async () => {
-      try {
-        ImportedIconRef.current = (
-          await import(`../graphics/${name}.svg`)
-        ).ReactComponent
-        if (onCompleted) {
-          onCompleted(name, ImportedIconRef.current)
-        }
-      } catch (err) {
-        if (onError) {
-          onError(err)
-        }
-        setError(err)
-      } finally {
-        setLoading(false)
-      }
-    }
-    importIcon()
-  }, [name, onCompleted, onError])
-
-  return { error, loading, SvgIcon: ImportedIconRef.current }
-}
-
-/**
- * Simple wrapper for dynamic SVG import hook. You can implement your own wrapper,
- * or even use the hook directly in your components.
- */
-const Icon = ({ name, onCompleted, onError, ...rest }) => {
-  const { error, loading, SvgIcon } = useDynamicSVGImport(name, {
-    onCompleted,
-    onError,
-  })
-  if (error) {
-    return error.message
-  }
-  if (loading) {
-    return "Loading..."
-  }
-  if (SvgIcon) {
-    return <SvgIcon {...rest} />
-  }
-  return null
-}
-
-export default function DisplayIcon() {
-  const [name, setName] = useState("icoArrowCircleDown")
-
-  const handleOnCompleted = useCallback(
-    (iconName) => console.log(`${iconName} successfully loaded`),
-    []
-  )
-
-  const handleIconError = useCallback((err) => console.error(err.message), [])
-
+function DisplayIcon({ name = "icoCalendar", styled = "h-8" }) {
   return (
-    <div>
-      <Icon
-        name={name}
-        fill='gray'
-        onCompleted={handleOnCompleted}
-        onError={handleIconError}
-      />
+    <div className=''>
+      <ReactSVG src={"/graphics/" + name + ".svg"} className='svg-xl' />
+      <div className='text-center text-sm text-gray1 mt-1'>{name}</div>
     </div>
   )
 }
+
+const ShowAllIcons = () => {
+  const myArray = [
+    "icoArrowCircleDown",
+    "icoArrowCircleUp",
+    "icoCalendar",
+    "icoCarretDown",
+    "icoCheck",
+    "icoCheckSquare",
+    "icoChevronL",
+    "icoChevronR",
+    "icoCloseX",
+  ]
+
+  return (
+    <div className='mb-4 grid gap-7 grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4'>
+      {myArray.map((a) => {
+        return <DisplayIcon name={a} />
+      })}
+    </div>
+  )
+}
+
+export default ShowAllIcons
