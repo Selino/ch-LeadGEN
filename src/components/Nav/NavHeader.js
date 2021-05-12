@@ -54,8 +54,11 @@ export default function NavHeader(props) {
           <NavDropdown.Item eventKey='4.2'>Executive Summary</NavDropdown.Item>
           <NavDropdown.Divider />
           <Dropdown.Header>Switch App</Dropdown.Header>
-          <NavDropdown.Item eventKey='4.4'>LeadROI</NavDropdown.Item>
+          <NavDropdown.Item eventKey='disabled' disabled>
+            LeadGEN
+          </NavDropdown.Item>
           <NavDropdown.Item eventKey='4.4'>LeadNav</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.5'>LeadROI</NavDropdown.Item>
           <NavDropdown.Divider />
 
           <NavDropdown.Item eventKey='4.4'>Log Out</NavDropdown.Item>
