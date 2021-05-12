@@ -1,7 +1,5 @@
 import React from "react"
-import { ReactComponent as ArrowDown } from "../../graphics/icoArrowCircleDown.svg"
-import { ReactComponent as ArrowUp } from "../../graphics/icoArrowCircleUp.svg"
-import { ReactComponent as Equal } from "../../graphics/icoEqualCircle.svg"
+import { ReactSVG } from "react-svg"
 
 /**
 
@@ -15,13 +13,22 @@ export default function TrendIndicator(props) {
   return (
     <>
       {value > baseValue && baseValue != null && (
-        <ArrowUp className='svg-primary' />
+        <ReactSVG
+          src='/graphics/icoArrowCircleUp.svg'
+          className='svg-primary'
+        />
       )}
       {value < baseValue && baseValue != null && (
-        <ArrowDown className='svg-primary' />
+        <ReactSVG
+          src='/graphics/icoArrowCircleDown.svg'
+          className='svg-primary'
+        />
       )}
       {value === baseValue && baseValue != null && (
-        <Equal className='svg-secondary' />
+        <ReactSVG
+          src='/graphics/icoEqualCircle.svg'
+          className='svg-secondary'
+        />
       )}
       {baseValue == null && <></>}
     </>

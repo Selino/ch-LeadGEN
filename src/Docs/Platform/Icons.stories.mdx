@@ -1,10 +1,24 @@
 import { Meta } from "@storybook/addon-docs/blocks"
-import ArrowCircleDown from "../../graphics/icoArrowCircleDown.svg"
+import ShowAllIcons from "./DisplayIcon"
 
 <Meta title='Platform/Icons' />
 
 # Icons
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio distinctio porro laboriosam, voluptatibus officiis culpa voluptatem illum illo maiores ab assumenda vero quibusdam possimus ipsum amet deleniti doloribus suscipit modi facere iste? Nemo adipisci aperiam, id suscipit laborum, vitae sint voluptas fuga impedit ratione quod autem incidunt ipsa delectus consectetur dolorem voluptatem dicta.
+An icon is a small graphical representation of a program, feature, or file. When you click or double-click an icon, the associated file or program opens or an action is performed. For example, if you were to double-click My Computer icon, it would open Windows Explorer. Icons are a component of GUI operating systems, including Apple macOS X and Microsoft Windows. Icons help users quickly identify the type of file represented by the icon. The image is an example of "My Computer" icons in different versions of Microsoft Windows.
 
-<img src={ArrowCircleDown} />
+[View Utility Icons](#utility) | [View Doctype Icons](#doctype)
+
+<br />
+
+## <a id="utility"></a> Utility
+
+Utility icons are simple, single-color glyphs that identify labels and actions across form factors.
+
+<ShowAllIcons type='utils' />
+
+## <a id="doctype"></a> Doctype
+
+Doctype icons represent document file formats.
+
+<ShowAllIcons type='docs' color='#CCC' />

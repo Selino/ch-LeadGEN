@@ -43,7 +43,7 @@ export const Default = (args) => {
   return <TrendIndicator {...args} />
 }
 
-const Template = (args) => <TrendIndicator {...args} />
+// const Template = (args) => <TrendIndicator {...args} />
 
 // export const DownwardTrend = Template.bind({})
 // DownwardTrend.args = {

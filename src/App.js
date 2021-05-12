@@ -17,11 +17,11 @@ function App() {
           <MetricCard
             currency='USD'
             value={19.8}
-            baseValue={19.5}
+            baseValue={20}
             label='Spend to Date'
             unit='thousand'
           />
-          <MetricCard value={200} baseValue={100} label='Conversions' />{" "}
+          <MetricCard value={236} baseValue={100} label='Conversions' />{" "}
           <MetricCard currency='USD' value={205} baseValue={205} label='CPC' />{" "}
           <MetricCard value={92} label='Live' />
         </div>

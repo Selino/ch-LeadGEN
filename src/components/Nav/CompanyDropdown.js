@@ -1,6 +1,6 @@
 import React from "react"
 import { NavDropdown, Dropdown } from "react-bootstrap"
-import { ReactComponent as SmArrowDown } from "../../graphics/icoCarretDown.svg"
+import { ReactSVG } from "react-svg"
 
 export default function CompanyDropdown(props) {
   return (
@@ -15,9 +15,9 @@ export default function CompanyDropdown(props) {
               Company A
             </div>
           </div>
-          <SmArrowDown
+          <ReactSVG
+            src='/graphics/icoCarretDown.svg'
             className='svg-light my-auto'
-            style={{ width: "10px" }}
           />
         </div>
       }
