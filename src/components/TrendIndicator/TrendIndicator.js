@@ -13,13 +13,22 @@ export default function TrendIndicator(props) {
   return (
     <>
       {value > baseValue && baseValue != null && (
-        <ReactSVG src='/graphics/icoArrowCircleDown.svg' />
+        <ReactSVG
+          src='/graphics/icoArrowCircleUp.svg'
+          className='svg-primary'
+        />
       )}
       {value < baseValue && baseValue != null && (
-        <ReactSVG src='/graphics/icoArrowCircleUp.svg' />
+        <ReactSVG
+          src='/graphics/icoArrowCircleDown.svg'
+          className='svg-primary'
+        />
       )}
       {value === baseValue && baseValue != null && (
-        <ReactSVG src='/graphics/icoEqualCircle.svg' />
+        <ReactSVG
+          src='/graphics/icoEqualCircle.svg'
+          className='svg-secondary'
+        />
       )}
       {baseValue == null && <></>}
     </>
