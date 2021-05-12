@@ -18,9 +18,12 @@ export default function NavHeader(props) {
         <div>
           <ReactSVG
             src='/graphics/logoHexagons.svg'
-            className='inline-block mr-2 fill-current'
+            className='inline-block mr-2 fill-current branding'
           />
-          <ReactSVG src='/graphics/logoLeadgen.svg' className='inline-block' />
+          <ReactSVG
+            src='/graphics/logoLeadgen.svg'
+            className='inline-block branding'
+          />
         </div>
       </Navbar.Brand>
 

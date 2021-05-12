@@ -29,4 +29,7 @@
   .dropdown-toggle::after {
     display: none !important;
   }
+  .branding > svg {
+    height: 32px;
+  }
 }
