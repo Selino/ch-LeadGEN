@@ -1,12 +1,6 @@
 import React from "react"
 import { ReactSVG } from "react-svg"
 import { Navbar, NavDropdown, Dropdown } from "react-bootstrap"
-// import { ReactComponent as Logo } from "/graphics/logoHexagons.svg"
-// import { ReactComponent as LogoChText } from "/graphics/logoChText.svg"
-// import { ReactComponent as LogoAppName } from "/graphics/logoLeadgen.svg"
-// import { ReactComponent as NavLocation } from "/graphics/icoLocation.svg"
-// import { ReactComponent as NavHamburger } from "/graphics/icoHamburger.svg"
-// import { ReactComponent as VerticalRule } from "/graphics/verticalRule.svg"
 import CompanyDropdown from "./CompanyDropdown"
 import FacilityDropdown from "./FacilityDropdown"
 
@@ -26,11 +20,7 @@ export default function NavHeader(props) {
             src='/graphics/logoHexagons.svg'
             className='inline-block mr-2 fill-current'
           />
-          <ReactSVG
-            src='/graphics/logoChText.svg'
-            className='hidden tablet:inline-block'
-          />
-          <ReactSVG src='/graphics/logoLeadgen' className='inline-block' />
+          <ReactSVG src='/graphics/logoLeadgen.svg' className='inline-block' />
         </div>
       </Navbar.Brand>
 
