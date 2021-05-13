@@ -15,30 +15,30 @@ const ShowAllIcons = ({ type }) => {
   switch (type) {
     default:
       myArray = [
-        "icoArrowCircleDown",
-        "icoArrowCircleUp",
-        "icoCalendar",
-        "icoCarretDown",
-        "icoCheck",
-        "icoCheckSquare",
-        "icoChevronL",
-        "icoChevronR",
-        "icoCloseX",
-        "icoCloudDownload",
-        "icoEqualCircle",
-        "icoExclamationTriangle",
-        "icoGripVertical",
-        "icoHamburger",
-        "icoInfoCircle",
-        "icoLocation",
-        "icoPhone",
-        "icoSearch",
-        "icoSliders",
-        "icoSquare",
+        "utiArrowCircleDown",
+        "utiArrowCircleUp",
+        "utiCalendar",
+        "utiCarretDown",
+        "utiCheck",
+        "utiCheckSquare",
+        "utiChevronL",
+        "utiChevronR",
+        "utiCloseX",
+        "utiCloudDownload",
+        "utiEqualCircle",
+        "utiExclamationTriangle",
+        "utiGripVertical",
+        "utiHamburger",
+        "utiInfoCircle",
+        "utiLocation",
+        "utiPhone",
+        "utiSearch",
+        "utiSliders",
+        "utiSquare",
       ]
       break
     case "docs":
-      myArray = ["docExcel", "docPdf"]
+      myArray = ["docExcel", "docPdf", "docCsv", "docText"]
       break
   }
   return (
