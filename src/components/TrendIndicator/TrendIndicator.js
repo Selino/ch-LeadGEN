@@ -14,19 +14,19 @@ export default function TrendIndicator(props) {
     <>
       {value > baseValue && baseValue != null && (
         <ReactSVG
-          src='/graphics/icoArrowCircleUp.svg'
+          src='/graphics/utiArrowCircleUp.svg'
           className='svg-primary'
         />
       )}
       {value < baseValue && baseValue != null && (
         <ReactSVG
-          src='/graphics/icoArrowCircleDown.svg'
+          src='/graphics/utiArrowCircleDown.svg'
           className='svg-primary'
         />
       )}
       {value === baseValue && baseValue != null && (
         <ReactSVG
-          src='/graphics/icoEqualCircle.svg'
+          src='/graphics/utiEqualCircle.svg'
           className='svg-secondary'
         />
       )}
