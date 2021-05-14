@@ -33,7 +33,7 @@ export default function NavHeader(props) {
         <NavDropdown
           alignRight
           title={
-            <ReactSVG src='/graphics/icoLocation.svg' className='svg-light' />
+            <ReactSVG src='/graphics/utiLocation.svg' className='svg-light' />
           }
           id='nav-facility-dropdown'
         >
@@ -44,7 +44,7 @@ export default function NavHeader(props) {
         <NavDropdown
           alignRight
           title={
-            <ReactSVG src='/graphics/icoHamburger.svg' className='svg-light' />
+            <ReactSVG src='/graphics/utiHamburger.svg' className='svg-light' />
           }
           id='nav-user-dropdown'
           className='test'
