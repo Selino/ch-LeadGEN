@@ -6,10 +6,22 @@ import IconSizeLg from "../../images/icons_page/icon-size-lg.svg"
 import IconSizeMd from "../../images/icons_page/icon-size-md.svg"
 import IconSizeSm from "../../images/icons_page/icon-size-sm.svg"
 import IconSizeXsm from "../../images/icons_page/icon-size-xsm.svg"
+import IconBS from "../../images/icons_page/icons-bs.jpg"
+import colors from "../../tokens/colors"
+import radii from "../../tokens/radii"
+import borderWidths from "../../tokens/borderWidths"
 
 <Meta title='Platform/Icons' />
 
 # Icons
+
+<img
+  src={IconBS}
+  style={{
+    border: borderWidths.hairline + " " + colors.graysGray4 + " solid",
+    borderRadius: radii.soft,
+  }}
+/>
 
 An icon is a small graphical representation of a program, feature, or file. When you click or double-click an icon, the associated file or program opens or an action is performed. For example, if you were to double-click My Computer icon, it would open Windows Explorer. Icons are a component of GUI operating systems, including Apple macOS X and Microsoft Windows. Icons help users quickly identify the type of file represented by the icon. The image is an example of "My Computer" icons in different versions of Microsoft Windows.
 
@@ -30,14 +42,24 @@ Different icon sizes are used to maximize particular effects in given contexts.
   <img src={IconSizeXsm} />
 </div>
 
-## <a id="utility"></a> Utility
+<br />
 
-Utility icons are simple, single-color glyphs that identify labels and actions across form factors.
+## Type
+
+Two types of icons are used to communicate information within Clariture Health, each with variations based on use case and representation, **Utility** and **Doctype**.
+
+<br />
+
+### Utility
+
+Utility icons are simple, single-color glyphs that identify labels and actions across form factors. They can be paired with text or used alone, and can be any color. They have no background shape.
 
 <ShowAllIcons type='utils' />
 
-## <a id="doctype"></a> Doctype
+<br />
 
-Doctype icons represent document file formats.
+### Doctype
+
+Doctype icons represent document file formats. Each doctype icon is made up of a white glyph representing its file type, on a background resembling a piece of paper with a folded corner.
 
 <ShowAllIcons type='docs' color='#CCC' />

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="136px" viewBox="0 0 160 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>OpenSans_regular</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal">
+        <g id="Open-Sans-Catalog" transform="translate(-36.000000, -91.000000)" fill="#000000">
+            <g id="OpenSans_regular" transform="translate(36.000000, 91.511719)">
+                <text id="Regular" font-family="LucidaGrande, Lucida Grande" font-size="14" letter-spacing="-0.0251">
+                    <tspan x="0" y="14">R</tspan>
+                    <tspan x="8.82743906" y="14" letter-spacing="0.1849">egu</tspan>
+                    <tspan x="34.5999125" y="14" letter-spacing="0.1709">la</tspan>
+                    <tspan x="46.7200328" y="14">r</tspan>
+                </text>
+                <text id="ABCDEFGHIJKLM" font-family="OpenSans-Regular, Open Sans" font-size="18" letter-spacing="-0.0036">
+                    <tspan x="5" y="33.9755859">A</tspan>
+                    <tspan x="16.387025" y="33.9755859" letter-spacing="-0.0018">BC</tspan>
+                    <tspan x="39.4019797" y="33.9755859">D</tspan>
+                    <tspan x="52.52405" y="33.9755859" letter-spacing="0.0036">E</tspan>
+                    <tspan x="62.5383922" y="33.9755859" letter-spacing="0.0018">F</tspan>
+                    <tspan x="71.8302312" y="33.9755859">G</tspan>
+                    <tspan x="84.9347234" y="33.9755859">HI</tspan>
+                    <tspan x="103.226352" y="33.9755859" letter-spacing="0.0018">J</tspan>
+                    <tspan x="108.035769" y="33.9755859">K</tspan>
+                    <tspan x="119.08002" y="33.9755859">LM</tspan>
+                </text>
+                <text id="NOPQRSTUVWXYZ" font-family="OpenSans-Regular, Open Sans" font-size="18" letter-spacing="-0.0018">
+                    <tspan x="5" y="57.9755859">N</tspan>
+                    <tspan x="18.5685125" y="57.9755859" letter-spacing="-0.0036">O</tspan>
+                    <tspan x="32.5834672" y="57.9755859" letter-spacing="0.0018">P</tspan>
+                    <tspan x="43.4221812" y="57.9755859" letter-spacing="-0.0036">Q</tspan>
+                    <tspan x="57.4371359" y="57.9755859" letter-spacing="0.0036">R</tspan>
+                    <tspan x="68.5676891" y="57.9755859" letter-spacing="-0.0036">S</tspan>
+                    <tspan x="78.4429953" y="57.9755859" letter-spacing="0.0036">T</tspan>
+                    <tspan x="88.4046031" y="57.9755859">U</tspan>
+                    <tspan x="101.509095" y="57.9755859" letter-spacing="0.0036">V</tspan>
+                    <tspan x="112.226562" y="57.9755859" letter-spacing="-0.0036">W</tspan>
+                    <tspan x="128.887025" y="57.9755859" letter-spacing="0.0018">XY</tspan>
+                    <tspan x="149.360352" y="57.9755859">Z</tspan>
+                </text>
+                <text id="abcdefghijklm" font-family="OpenSans-Regular, Open Sans" font-size="18" letter-spacing="0.0036">
+                    <tspan x="5" y="81.9755859">a</tspan>
+                    <tspan x="15.0143422" y="81.9755859" letter-spacing="-0.0036">b</tspan>
+                    <tspan x="26.0410156" y="81.9755859" letter-spacing="0.0018">c</tspan>
+                    <tspan x="34.6121516" y="81.9755859" letter-spacing="-0.0036">d</tspan>
+                    <tspan x="45.638825" y="81.9755859">e</tspan>
+                    <tspan x="55.7374578" y="81.9755859" letter-spacing="-0.0018">fg</tspan>
+                    <tspan x="71.6947953" y="81.9755859" letter-spacing="-0.0036">h</tspan>
+                    <tspan x="82.7390469" y="81.9755859" letter-spacing="-0.0018">ijkl</tspan>
+                    <tspan x="105.838292" y="81.9755859">m</tspan>
+                </text>
+                <text id="nopqrstuvwxyz" font-family="OpenSans-Regular, Open Sans" font-size="18" letter-spacing="-0.0036">
+                    <tspan x="5" y="105.975586">n</tspan>
+                    <tspan x="16.0442516" y="105.975586">o</tspan>
+                    <tspan x="26.9163219" y="105.975586">pq</tspan>
+                    <tspan x="48.9696688" y="105.975586" letter-spacing="0.0036">r</tspan>
+                    <tspan x="56.320925" y="105.975586" letter-spacing="0.0018">s</tspan>
+                    <tspan x="64.9096391" y="105.975586">t</tspan>
+                    <tspan x="71.2641313" y="105.975586">u</tspan>
+                    <tspan x="82.3083828" y="105.975586">v</tspan>
+                    <tspan x="91.3259609" y="105.975586">w</tspan>
+                    <tspan x="105.323337" y="105.975586" letter-spacing="-0.0018">xy</tspan>
+                    <tspan x="123.820714" y="105.975586">z</tspan>
+                </text>
+                <text id="1234567890" font-family="OpenSans-Regular, Open Sans" font-size="18" letter-spacing="-0.0002">
+                    <tspan x="5" y="129.975586">1234567890</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

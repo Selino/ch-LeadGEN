@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="136px" viewBox="0 0 164 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>OpenSans_semibold</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Open-Sans-Catalog" transform="translate(-214.000000, -91.000000)" fill="#000000">
+            <g id="OpenSans_semibold" transform="translate(214.000000, 91.511719)">
+                <text id="SemiBold" font-family="LucidaGrande, Lucida Grande" font-size="14" font-weight="normal" letter-spacing="-0.0105">
+                    <tspan x="0" y="14">SemiBold</tspan>
+                </text>
+                <text id="ABCDEFGHIJKLM" font-family="OpenSans-SemiBold, Open Sans" font-size="18" font-weight="500" letter-spacing="0.0018">
+                    <tspan x="5" y="33.9755859">A</tspan>
+                    <tspan x="16.9021906" y="33.9755859" letter-spacing="0.0036">B</tspan>
+                    <tspan x="28.7886031" y="33.9755859" letter-spacing="-0.0036">C</tspan>
+                    <tspan x="40.1932063" y="33.9755859" letter-spacing="-0.0018">D</tspan>
+                    <tspan x="53.4013672" y="33.9755859">E</tspan>
+                    <tspan x="63.4490656" y="33.9755859" letter-spacing="0.0036">F</tspan>
+                    <tspan x="73.0327438" y="33.9755859">G</tspan>
+                    <tspan x="86.1038797" y="33.9755859">H</tspan>
+                    <tspan x="99.6214578" y="33.9755859" letter-spacing="0.0036">I</tspan>
+                    <tspan x="105.118222" y="33.9755859" letter-spacing="-0.0036">J</tspan>
+                    <tspan x="110.493528" y="33.9755859" letter-spacing="0.0036">K</tspan>
+                    <tspan x="122.002011" y="33.9755859">LM</tspan>
+                </text>
+                <text id="NOPQRSTUVWXYZ" font-family="OpenSans-SemiBold, Open Sans" font-size="18" font-weight="500" letter-spacing="0.0002">
+                    <tspan x="5" y="57.9755859">NOPQRSTUVWXYZ</tspan>
+                </text>
+                <text id="abcdefghijklm" font-family="OpenSans-SemiBold, Open Sans" font-size="18" font-weight="500" letter-spacing="0.0018">
+                    <tspan x="5" y="81.9755859">a</tspan>
+                    <tspan x="15.4432062" y="81.9755859">b</tspan>
+                    <tspan x="26.65805" y="81.9755859">c</tspan>
+                    <tspan x="35.5719594" y="81.9755859">d</tspan>
+                    <tspan x="46.7868031" y="81.9755859" letter-spacing="0.0036">e</tspan>
+                    <tspan x="57.1614969" y="81.9755859" letter-spacing="-0.0036">f</tspan>
+                    <tspan x="63.6881703" y="81.9755859" letter-spacing="0.0036">g</tspan>
+                    <tspan x="73.7025125" y="81.9755859" letter-spacing="-0.0036">hijkl</tspan>
+                    <tspan x="110.45795" y="81.9755859">m</tspan>
+                </text>
+                <text id="nopqrstuvwxyz" font-family="OpenSans-SemiBold, Open Sans" font-size="18" font-weight="500" letter-spacing="-0.0036">
+                    <tspan x="5" y="105.975586">no</tspan>
+                    <tspan x="27.4136984" y="105.975586">pq</tspan>
+                    <tspan x="49.8433859" y="105.975586" letter-spacing="0.0036">r</tspan>
+                    <tspan x="57.6077281" y="105.975586">s</tspan>
+                    <tspan x="66.3668234" y="105.975586" letter-spacing="0.0018">t</tspan>
+                    <tspan x="73.4438188" y="105.975586">u</tspan>
+                    <tspan x="84.866" y="105.975586" letter-spacing="0.0036">v</tspan>
+                    <tspan x="94.5024125" y="105.975586" letter-spacing="-0.0018">w</tspan>
+                    <tspan x="109.204714" y="105.975586">x</tspan>
+                    <tspan x="119.115177" y="105.975586" letter-spacing="0.0018">y</tspan>
+                    <tspan x="128.767367" y="105.975586">z</tspan>
+                </text>
+                <text id="1234567890" font-family="OpenSans-SemiBold, Open Sans" font-size="18" font-weight="500" letter-spacing="-0.0002">
+                    <tspan x="5" y="129.975586">1234567890</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
