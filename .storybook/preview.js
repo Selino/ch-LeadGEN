@@ -8,7 +8,7 @@ export const parameters = {
     storySort: {
       order: [
         "Start Here",
-        "Design Guidelines",
+        "Brand Guidelines",
         ["Logos", "Colors", "Typography", "Imagery", "Voice & Tone"],
         "Platform",
         ["Overview", "Tokens", "Icons"],
