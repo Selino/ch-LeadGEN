@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="155px" height="122px" viewBox="0 0 155 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Roboto_light_italic</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Roboto-Catalog" transform="translate(-225.000000, -91.000000)" fill="#000000">
+            <g id="Roboto_light_italic" transform="translate(225.000000, 91.511719)">
+                <text id="Light-Italic" font-family="LucidaGrande, Lucida Grande" font-size="14" font-weight="normal" letter-spacing="-0.0109">
+                    <tspan x="0" y="14">Li</tspan>
+                    <tspan x="11.4899187" y="14" letter-spacing="0.0031">gh</tspan>
+                    <tspan x="28.9140875" y="14">t Italic</tspan>
+                </text>
+                <text id="ABCDEFGHIJKLM" font-family="Roboto-LightItalic, Roboto" font-size="18" font-style="italic" font-weight="300" letter-spacing="-0.0036">
+                    <tspan x="5" y="33.3945312">A</tspan>
+                    <tspan x="15.9915172" y="33.3945312" letter-spacing="0.0018">B</tspan>
+                    <tspan x="26.7774969" y="33.3945312">C</tspan>
+                    <tspan x="38.1996781" y="33.3945312" letter-spacing="0.0018">D</tspan>
+                    <tspan x="49.7239391" y="33.3945312" letter-spacing="-0.0072">E</tspan>
+                    <tspan x="59.7362703" y="33.3945312" letter-spacing="0.0054">F</tspan>
+                    <tspan x="69.6469437" y="33.3945312">G</tspan>
+                    <tspan x="81.6703812" y="33.3945312" letter-spacing="0.0072">H</tspan>
+                    <tspan x="94.1228937" y="33.3945312" letter-spacing="0.0036">I</tspan>
+                    <tspan x="98.8637984" y="33.3945312" letter-spacing="-0.0072">J</tspan>
+                    <tspan x="108.550934" y="33.3945312" letter-spacing="-0.0054">K</tspan>
+                    <tspan x="119.64612" y="33.3945312" letter-spacing="0.0018">L</tspan>
+                    <tspan x="128.937959" y="33.3945312">M</tspan>
+                </text>
+                <text id="NOPQRSTUVWXYZ" font-family="Roboto-LightItalic, Roboto" font-size="18" font-style="italic" font-weight="300" letter-spacing="0.0072">
+                    <tspan x="5" y="54.3945312">N</tspan>
+                    <tspan x="17.4876687" y="54.3945312" letter-spacing="0.0018">OPQ</tspan>
+                    <tspan x="52.1307641" y="54.3945312" letter-spacing="-0.0072">RS</tspan>
+                    <tspan x="73.7198797" y="54.3945312">T</tspan>
+                    <tspan x="84.2315984" y="54.3945312" letter-spacing="-0.0072">U</tspan>
+                    <tspan x="95.7908047" y="54.3945312">V</tspan>
+                    <tspan x="106.645297" y="54.3945312" letter-spacing="-0.009">W</tspan>
+                    <tspan x="122.377508" y="54.3945312" letter-spacing="0.0018">X</tspan>
+                    <tspan x="133.145909" y="54.3945312">Y</tspan>
+                    <tspan x="143.691195" y="54.3945312">Z</tspan>
+                </text>
+                <text id="abcdefghijklm" font-family="Roboto-LightItalic, Roboto" font-size="18" font-style="italic" font-weight="300" letter-spacing="0.0072">
+                    <tspan x="5" y="75.3945312">a</tspan>
+                    <tspan x="14.4466531" y="75.3945312" letter-spacing="0.009">b</tspan>
+                    <tspan x="24.2203016" y="75.3945312">c</tspan>
+                    <tspan x="33.3066031" y="75.3945312" letter-spacing="-0.0018">de</tspan>
+                    <tspan x="52.1994875" y="75.3945312" letter-spacing="-0.207">f</tspan>
+                    <tspan x="57.6526437" y="75.3945312">g</tspan>
+                    <tspan x="67.4260812" y="75.3945312" letter-spacing="0.0018">h</tspan>
+                    <tspan x="77.09585" y="75.3945312" letter-spacing="0.0036">i</tspan>
+                    <tspan x="81.0984734" y="75.3945312" letter-spacing="0.0018">j</tspan>
+                    <tspan x="85.1696094" y="75.3945312">k</tspan>
+                    <tspan x="93.8092578" y="75.3945312" letter-spacing="0.0036">l</tspan>
+                    <tspan x="97.8118812" y="75.3945312">m</tspan>
+                </text>
+                <text id="nopqrstuvwxyz" font-family="Roboto-LightItalic, Roboto" font-size="18" font-style="italic" font-weight="300" letter-spacing="-0.0004">
+                    <tspan x="5" y="96.3945312">n</tspan>
+                    <tspan x="14.6763578" y="96.3945312" letter-spacing="0.0176">op</tspan>
+                    <tspan x="34.3463234" y="96.3945312">q</tspan>
+                    <tspan x="44.1720953" y="96.3945312" letter-spacing="0.0176">rst</tspan>
+                    <tspan x="64.8088797" y="96.3945312">u</tspan>
+                    <tspan x="74.4852375" y="96.3945312" letter-spacing="0.0176">vw</tspan>
+                    <tspan x="96.2557891" y="96.3945312">xyz</tspan>
+                </text>
+                <text id="1234567890" font-family="Roboto-LightItalic, Roboto" font-size="18" font-style="italic" font-weight="300" letter-spacing="0.0005">
+                    <tspan x="5" y="117.394531">1234567890</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
