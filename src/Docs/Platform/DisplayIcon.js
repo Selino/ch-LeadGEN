@@ -1,6 +1,5 @@
 import React from "react"
 import { ReactSVG } from "react-svg"
-import colors from "../../tokens/colors"
 
 function DisplayIcon({ name }) {
   return (
