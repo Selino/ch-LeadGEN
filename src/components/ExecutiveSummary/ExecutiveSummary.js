@@ -81,14 +81,14 @@ const Emotion = styled.div`
   }
 
   .page-link {
-    color: ${colors.primaryInactive};
+    color: ${colors.textInfoText};
   }
 
   .btn-primary,
   .page-item.active .page-link {
     color: ${colors.white};
-    background-color: ${colors.primaryInactive};
-    border-color: ${colors.primaryInactive};
+    background-color: ${colors.buttonPrimaryInactive};
+    border-color: ${colors.buttonPrimaryInactive};
   }
 
   .btn-primary:hover,
@@ -156,7 +156,7 @@ export default function ExecutiveSummary() {
         <MiniBar
           perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
-          forGroundColor={colors.primaryInactive}
+          forGroundColor={colors.info}
         />
       </div>
     )
@@ -176,7 +176,7 @@ export default function ExecutiveSummary() {
         <MiniBar
           perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
-          forGroundColor={colors.alertSuccess}
+          forGroundColor={colors.success}
         />
       </div>
     )
@@ -193,13 +193,17 @@ export default function ExecutiveSummary() {
   }
 
   const displayStatus = (status) => {
-    let variant = colors.graysGray2
+    let text = colors.graysGray2
+    let bg = colors.graysGray5
+
     if (status === "live") {
-      variant = colors.successInactive
+      text = colors.textInfo
+      bg = colors.backgroundInfo
     } else if (status === "paused") {
-      variant = colors.alertWarningText
+      text = colors.textWarning
+      bg = colors.backgroundWarning
     }
-    return <Badge text={status} variant={variant} />
+    return <Badge status={status} text={text} bg={bg} />
   }
 
   const { SearchBar } = Search

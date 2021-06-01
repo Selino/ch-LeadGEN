@@ -1,5 +1,6 @@
 import { Meta } from "@storybook/addon-docs/blocks"
 import DisplayColors from "./DisplayColors"
+import DisplaySpacing from "./DisplaySpacing"
 
 <Meta title='Platform/Tokens' />
 
@@ -11,9 +12,42 @@ Design tokens are the visual design atoms of the design system — specifically,
 
 ## How to obtain and use tokens within your application
 
-Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. At lectus urna duis convallis. At volutpat diam ut venenatis. Fames ac turpis egestas maecenas. Arcu bibendum at varius vel pharetra vel. Neque ornare aenean euismod elementum nisi quis eleifend. Ornare lectus sit amet est placerat. At erat pellentesque adipiscing commodo elit at imperdiet dui. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Nisi est sit amet facilisis magna etiam. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Nam libero justo laoreet sit amet cursus.
+Tokens orginate from a master Figma file and are pulled into applications via the Figma API. At Clariture we use two primary methods for propegating these tokens throughout applications and documents.
 
-<br />
+### React
+
+The Figma API is accessed via custom React scripts and written to globally available components at `/tokens/` named by type; e.g. colors, fontFamily, etc.
+
+```
+// Example YourComponent.js
+
+import colors from "./tokens/colors"
+import colors from "./tokens/spacing"
+```
+
+### CSS & Tailwind
+
+Use the golablly available components to write any needed custom CSS values, including custom Tailwind settings.
+
+```
+// Example YourComponent.js
+import colors from "./tokens/colors"
+import spacing from "./tokens/spacing"
+
+theme: {
+    colors: {
+      white: colors.white,
+      gray1: colors.graysGray1,
+      gray2: colors.graysGray2,
+      gray3: colors.graysGray3
+    }
+    spacing: {
+        small: spacing.small,
+        medium: spacing.medium,
+        large: spacing.large
+    }
+}
+```
 
 ## <a id="Colors"></a> Colors
 
@@ -25,7 +59,18 @@ Dynamic colors to use within an application. Tokens that have the prefix of "BRA
 
 ## Spacing
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sed nostrum architecto aspernatur eaque, quia quos sequi odit laudantium beatae quae molestiae officia praesentium error?
+Spacing tokens are used for padding, margins, and position coordinates. Border-width tokens are used for the border property.
+
+<DisplaySpacing />
+
+```
+// Example YourComponent.js
+import spacing from "./tokens/spacing"
+
+return <div style={{width: spacing.large}}>
+something here
+</div>
+```
 
 <br />
 
@@ -52,3 +97,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed necessitatibus veli
 ## Shadows
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio repellat quos cum et nihil commodi molestiae quae magni ipsum.
+
+```
+
+```
+
+```
+
+```

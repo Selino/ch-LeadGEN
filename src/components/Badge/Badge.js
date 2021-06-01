@@ -6,22 +6,22 @@ import fontWeights from "../../tokens/fontWeights"
 import radii from "../../tokens/radii"
 
 export default function Badge(props) {
-  const { variant } = props
+  const { status, text, bg } = props
   return (
     <div
       style={{
-        color: variant,
+        color: text,
         padding: spacing.micro,
         fontSize: fontSizes.badge,
         fontWeight: fontWeights.black,
-        backgroundColor: colors.graysGray5,
+        backgroundColor: bg,
         textTransform: "uppercase",
         width: "100%",
         textAlign: "center",
         borderRadius: radii.rounded,
       }}
     >
-      {props.text}
+      {status}
     </div>
   )
 }
