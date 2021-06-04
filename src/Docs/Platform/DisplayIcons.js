@@ -4,7 +4,7 @@ import { ReactSVG } from "react-svg"
 function DisplayIcon({ name }) {
   return (
     <div key={name}>
-      <ReactSVG src={"/graphics/" + name + ".svg"} className='svg-xl' />
+      <ReactSVG src={`/graphics/${name}.svg`} className='svg-xl' />
       <div className='text-center text-sm text-brand mt-1'>{name}</div>
     </div>
   )
@@ -38,7 +38,7 @@ const ShowAllIcons = ({ type }) => {
       ]
       break
     case "docs":
-      myArray = ["docExcel", "docPdf", "docCsv", "docText"]
+      myArray = ["docArchive", "docExcel", "docPdf", "docCsv", "docText"]
       break
   }
   return (

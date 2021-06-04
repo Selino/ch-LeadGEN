@@ -12,7 +12,6 @@ module.exports = {
       gray3: colors.graysGray3,
       gray4: colors.graysGray4,
       gray5: colors.graysGray5,
-      gray6: colors.graysGray6,
       primary: colors.primaryInactive,
       brand: colors.brandLeadGen,
       success: colors.alertSuccess,
