@@ -7,7 +7,10 @@ const DisplayFonts = () => {
       <td className='p-2'>{key}</td>
       <td
         className='p-2'
-        style={{ fontFamily: fontFamilies[key] + ", sans-serif" }}
+        style={{
+          fontFamily: `${fontFamilies[key]}, ${key}, sans-serif`,
+          fontWeight: key,
+        }}
       >
         <span className='text-4xl'>Aa</span>
         <br />
