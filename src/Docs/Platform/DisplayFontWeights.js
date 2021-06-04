@@ -1,15 +1,13 @@
 import React from "react"
-import fontSizes from "../../tokens/fontSizes"
+import fontWeights from "../../tokens/fontWeights"
 
-const DisplayFontSizes = () => {
-  const myFonts = Object.keys(fontSizes).map((key) => (
+const DisplayFontWeights = () => {
+  const myFonts = Object.keys(fontWeights).map((key) => (
     <tr key={key} className='border-b border-gray4'>
       <td className='p-4'>{key}</td>
-      <td className='p-4'>{fontSizes[key]}</td>
-      <td className='p-4'>
-        <span style={{ fontSize: fontSizes[key] }}>
-          The quick brown fox jumped over the lazy dog.
-        </span>
+      <td className='p-4'>{fontWeights[key]}</td>
+      <td className='p-4' style={{ fontWeight: fontWeights[key] }}>
+        Almost before we knew it, we had left the ground.
       </td>
       <td className='p-4'>1.0.0</td>
     </tr>
@@ -27,4 +25,4 @@ const DisplayFontSizes = () => {
   )
 }
 
-export default DisplayFontSizes
+export default DisplayFontWeights

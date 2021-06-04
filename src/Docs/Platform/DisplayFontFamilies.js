@@ -4,9 +4,9 @@ import fontFamilies from "../../tokens/fontFamilies"
 const DisplayFonts = () => {
   const myFonts = Object.keys(fontFamilies).map((key) => (
     <tr key={key} className='border-b border-gray4'>
-      <td className='p-2'>{key}</td>
+      <td className='p-4'>{key}</td>
       <td
-        className='p-2'
+        className='p-4'
         style={{
           fontFamily: `${fontFamilies[key]}, ${key}, sans-serif`,
           fontWeight: key,
@@ -16,7 +16,7 @@ const DisplayFonts = () => {
         <br />
         {fontFamilies[key]}
       </td>
-      <td className='p-2'>1.0.0</td>
+      <td className='p-4'>1.0.0</td>
     </tr>
   ))
   return (
