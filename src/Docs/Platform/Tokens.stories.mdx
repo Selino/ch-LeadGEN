@@ -72,9 +72,11 @@ Spacing tokens are used for padding, margins, and position coordinates. Border-w
 // Example YourComponent.js
 import spacing from "./tokens/spacing"
 
-return <div style={{width: spacing.large}}>
-something here
-</div>
+const DisplaySpacing = () => {
+  const mySpacing = spacing.large
+  return <div style={{ padding: mySpacing }}>Test</div>
+}
+
 ```
 
 <br />
