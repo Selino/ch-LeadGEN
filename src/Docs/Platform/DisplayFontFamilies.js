@@ -21,10 +21,10 @@ const DisplayFonts = () => {
   ))
   return (
     <table className='w-full'>
-      <tr className='bg-gray5'>
-        <th className='p-2 text-sm'>Token</th>
-        <th className='p-2 text-sm'>Example</th>
-        <th className='p-2 text-sm'>Released</th>
+      <tr className='bg-gray2'>
+        <th className='p-4 text-sm'>Token</th>
+        <th className='p-4 text-sm'>Example</th>
+        <th className='p-4 text-sm'>Released</th>
       </tr>
       {myFonts}
     </table>
