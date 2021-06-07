@@ -12,6 +12,7 @@ import Dinero from "dinero.js"
 import styled from "@emotion/styled"
 import colors from "../../tokens/colors"
 import fontSizes from "../../tokens/fontSizes"
+import fontWeights from "../../tokens/fontWeights"
 import radii from "../../tokens/radii"
 import shadows from "../../tokens/shadows"
 import {
@@ -46,6 +47,7 @@ const Emotion = styled.div`
     font-variant-caps: all-small-caps;
     background-color: ${colors.graysGray1};
     color: ${colors.graysGray4};
+    border: none;
   }
 
   .table-header-container {
@@ -158,7 +160,7 @@ export default function ExecutiveSummary() {
         <MiniBar
           perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
-          forGroundColor={colors.info}
+          forGroundColor={colors.buttonPrimaryInactive}
         />
       </div>
     )
@@ -178,7 +180,7 @@ export default function ExecutiveSummary() {
         <MiniBar
           perc={Math.round(myPerc)}
           daysInMarket={row.daysInMarket}
-          forGroundColor={colors.success}
+          forGroundColor={colors.buttonSuccessInactive}
         />
       </div>
     )
@@ -227,7 +229,11 @@ export default function ExecutiveSummary() {
       dataField: "name",
       text: "Name",
       sort: true,
-      style: { minWidth: "144px" },
+      style: {
+        minWidth: "144px",
+        fontWeight: fontWeights.medium,
+        color: colors.black,
+      },
     },
     {
       dataField: "spendToDate",
