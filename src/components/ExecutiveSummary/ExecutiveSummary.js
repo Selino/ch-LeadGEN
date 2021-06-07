@@ -1,6 +1,5 @@
 import React from "react"
 import { getSampleData } from "./ExecutiveSummaryData"
-import colors from "../../tokens/colors"
 import Badge from "../Badge/Badge"
 import { Button } from "react-bootstrap"
 import ToolkitProvider, {
@@ -11,8 +10,10 @@ import MiniBar from "../MiniBar/MiniBar"
 import moment from "moment"
 import Dinero from "dinero.js"
 import styled from "@emotion/styled"
+import colors from "../../tokens/colors"
 import fontSizes from "../../tokens/fontSizes"
 import radii from "../../tokens/radii"
+import shadows from "../../tokens/shadows"
 import {
   faCloudDownloadAlt,
   faSlidersH,
@@ -38,6 +39,7 @@ const Emotion = styled.div`
   .table-container {
     border-radius: ${radii.soft};
     background-color: ${colors.white};
+    box-shadow: ${shadows.soft};
   }
 
   .table-header {
