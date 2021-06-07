@@ -36,7 +36,6 @@ const Emotion = styled.div`
   }
 
   .table-container {
-    border: solid 1px #ccc;
     border-radius: ${radii.soft};
     background-color: ${colors.white};
   }
@@ -44,6 +43,7 @@ const Emotion = styled.div`
   .table-header {
     font-variant-caps: all-small-caps;
     background-color: ${colors.graysGray1};
+    color: ${colors.graysGray4};
   }
 
   .table-header-container {
@@ -197,11 +197,11 @@ export default function ExecutiveSummary() {
     let bg = colors.graysGray1
 
     if (status === "live") {
-      text = colors.info
-      bg = colors.backgroundInfo
+      text = colors.success
+      // bg = colors.backgroundInfo
     } else if (status === "paused") {
       text = colors.textWarning
-      bg = colors.backgroundWarning
+      // bg = colors.backgroundWarning
     }
     return <Badge status={status} text={text} bg={bg} />
   }

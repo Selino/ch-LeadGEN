@@ -10,7 +10,7 @@ import radii from "../../tokens/radii"
 
 export default function MiniBar(props) {
   const {
-    backGroundColor = colors.graysGray4,
+    backGroundColor = colors.graysGray2,
     forGroundColor = colors.primaryInactive,
   } = props
 
