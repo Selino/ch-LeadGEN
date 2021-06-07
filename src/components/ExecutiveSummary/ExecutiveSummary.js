@@ -1,5 +1,6 @@
 import React from "react"
 import { getSampleData } from "./ExecutiveSummaryData"
+import colors from "../../tokens/colors"
 import Badge from "../Badge/Badge"
 import { Button } from "react-bootstrap"
 import ToolkitProvider, {
@@ -10,7 +11,6 @@ import MiniBar from "../MiniBar/MiniBar"
 import moment from "moment"
 import Dinero from "dinero.js"
 import styled from "@emotion/styled"
-import colors from "../../tokens/colors"
 import fontSizes from "../../tokens/fontSizes"
 import radii from "../../tokens/radii"
 import {
@@ -43,7 +43,7 @@ const Emotion = styled.div`
 
   .table-header {
     font-variant-caps: all-small-caps;
-    background-color: ${colors.graysGray5};
+    background-color: ${colors.graysGray1};
   }
 
   .table-header-container {
@@ -193,11 +193,11 @@ export default function ExecutiveSummary() {
   }
 
   const displayStatus = (status) => {
-    let text = colors.graysGray2
-    let bg = colors.graysGray5
+    let text = colors.graysGray4
+    let bg = colors.graysGray1
 
     if (status === "live") {
-      text = colors.textInfo
+      text = colors.info
       bg = colors.backgroundInfo
     } else if (status === "paused") {
       text = colors.textWarning

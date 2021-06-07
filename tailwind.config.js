@@ -16,6 +16,8 @@ module.exports = {
       brand: colors.brandLeadGen,
       success: colors.alertSuccess,
       danger: colors.alertDanger,
+      borderborder: colors.chromeBorder,
+      chromebg: colors.chromeBackground,
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],

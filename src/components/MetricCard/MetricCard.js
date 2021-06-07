@@ -21,7 +21,7 @@ export default function MetricCard(props) {
   } = props
 
   return (
-    <div className='rounded-xl shadow box-content relative p-3'>
+    <div className='rounded-xl shadow box-content relative p-3 bg-white'>
       <div>
         <div className='inline-block align-top pl-1 font-medium text-md opacity-50'>
           <DisplayCurrency code={currency} />

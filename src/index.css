@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  body,
+  html {
+    @apply bg-chromebg !important;
+  }
+
   .svg-light > svg > path {
     @apply fill-current text-white;
   }
