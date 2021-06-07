@@ -16,6 +16,7 @@ import fontWeights from "../../tokens/fontWeights"
 import radii from "../../tokens/radii"
 import shadows from "../../tokens/shadows"
 import spacing from "../../tokens/spacing"
+import borderWidths from "../../tokens/borderWidths"
 import {
   faCloudDownloadAlt,
   faSlidersH,
@@ -39,13 +40,21 @@ const Emotion = styled.div`
   }
 
   .table td {
-    border: 1px solid ${colors.chromeBorder};
+    border: ${borderWidths.hairline} solid ${colors.chromeBorder};
+  }
+
+  .table td:hover {
+    box-shadow: inset 0px 0px 0px ${borderWidths.regular} ${colors.warning};
   }
 
   .table-container {
     border-radius: ${radii.soft};
     background-color: ${colors.white};
     box-shadow: ${shadows.soft};
+  }
+
+  .table thead th {
+    border: none;
   }
 
   .table-header {
@@ -131,7 +140,7 @@ const Emotion = styled.div`
   }
 
   .table-hover tbody tr:hover {
-    background-color: ${colors.alertWarningBackground};
+    background-color: ${colors.backgroundWarning};
   }
 
   .react-bootstrap-table table {
