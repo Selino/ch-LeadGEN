@@ -45,4 +45,7 @@
   .branding > svg {
     height: 32px;
   }
+  label {
+    margin-bottom: 0 !important;
+  }
 }

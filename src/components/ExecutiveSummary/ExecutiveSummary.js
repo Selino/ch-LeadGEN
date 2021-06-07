@@ -15,6 +15,7 @@ import fontSizes from "../../tokens/fontSizes"
 import fontWeights from "../../tokens/fontWeights"
 import radii from "../../tokens/radii"
 import shadows from "../../tokens/shadows"
+import spacing from "../../tokens/spacing"
 import {
   faCloudDownloadAlt,
   faSlidersH,
@@ -37,6 +38,10 @@ const Emotion = styled.div`
     table-layout: auto !important;
   }
 
+  .table td {
+    border: 1px solid ${colors.chromeBorder};
+  }
+
   .table-container {
     border-radius: ${radii.soft};
     background-color: ${colors.white};
@@ -51,18 +56,16 @@ const Emotion = styled.div`
   }
 
   .table-header-container {
-    padding: 0.5rem 1rem 0;
+    padding: ${spacing.small};
     line-height: -0.2rem;
     text-align: left;
   }
 
   .table-name-container {
     display: inline-block;
-    height: 1.5rem;
     max-width: 200px;
     margin-right: 1rem;
     padding-right: 1rem;
-    border-right: solid 1px #ccc;
     font-weight: bold;
     font-size: 0.9rem;
     font-variant-caps: all-small-caps;
