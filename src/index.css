@@ -48,4 +48,8 @@
   label {
     margin-bottom: 0 !important;
   }
+
+  .section-icon {
+    @apply rounded bg-black;
+  }
 }
