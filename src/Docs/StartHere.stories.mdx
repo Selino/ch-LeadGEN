@@ -1,20 +1,19 @@
 import { Meta } from "@storybook/addon-docs/blocks"
 import { linkTo } from "@storybook/addon-links"
-import Desktop from "../images/Desktop.png"
 import Hero from "../images/start-bs.jpg"
 
 <Meta title='Start Here' />
 
-<img src={Hero} />
+<img className='rounded' src={Hero} />
 
 <br />
 
-## How to Use
-
-These docs serve as the single source of truth for designers, developers, product managers, and other stakeholders to help them craft beautiful, consistent, user-friendly product experiences within the Clariture family of applications.
+# Introduction
 
 > **Design System**
 > : a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications
+
+These docs serve as the single source of truth for designers, developers, product managers, and other stakeholders to help them craft beautiful, consistent, user-friendly product experiences within the Clariture family of applications.
 
 <br />
 
@@ -22,24 +21,32 @@ These docs serve as the single source of truth for designers, developers, produc
 
 Design guidelines are sets of recommendations on how to apply design principles to provide a positive user experience. Designers, engineers, and other stakeholders use these guidelines to judge how to adopt principles such as intuitiveness, learnability, efficiency and consistency so they can create compelling designs and meet and exceed user needs.
 
+Design should be simple to understand and easy to use. It should gude users to achieve goals via intuitive interfaces. Visuals should create meaning, all elements should have reason.
+
 <br />
 
 ## Platform
 
-<img src={Desktop} />
+The Clariture Design System is built on top of [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/), and we use [React v17](https://reactjs.org) as a base Javascript code library. Each of these packages offers powerful and proven features that are opt-in on every level. 👍🏾
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est numquam rem ipsam. Sint dolorum laudantium quae quidem vel possimus reprehenderit nam vitae animi porro?
+<div className="flex flex-col">
+<div className="flex-auto p-3 bg-gray1 rounded m-2">
 
 ### [Tokens](/story/platform-tokens--page)
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam laboriosam, cupiditate deleniti maiores fugit vitae eveniet, enim, voluptatum voluptas natus voluptate rem? Omnis, molestias?
+Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes.
+
+</div>
+
+<div className="flex-auto p-3 bg-gray1 rounded m-2">
 
 ### [Icons](/story/platform-icons--page)
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque doloribus est accusamus incidunt exercitationem voluptate aliquid magnam quo pariatur! Vel tempora repudiandae inventore ea ad impedit, dolore magnam! Doloribus, tenetur?
+Clariture Design System Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 
-<br />
+</div>
+</div>
 
 ## Components
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, fugit labore? Possimus, aspernatur accusamus! Modi ad, numquam aspernatur iure excepturi ipsam adipisci esse molestiae libero.
+Components Components are the reusable building blocks of our design system. Each component meets a specific interaction or UI need, and has been specifically created to work together to create patterns and intuitive user experiences.
