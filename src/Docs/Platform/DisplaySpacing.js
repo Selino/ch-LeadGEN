@@ -4,7 +4,10 @@ import spacing from "tokens/spacing"
 const DisplaySpacing = () => {
   const mySpacing = Object.keys(spacing).map((key) => (
     <div key={key} className='text-sm'>
-      <div className='h-8 bg-gray4' style={{ width: spacing[key] }}></div>
+      <div
+        className='h-8 bg-gray4 rounded'
+        style={{ width: spacing[key] }}
+      ></div>
       {key} <br />
       {spacing[key]}
     </div>

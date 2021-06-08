@@ -29,7 +29,7 @@ const DisplayColors = () => {
   const myColors = Object.keys(colors).map((key) => (
     <div key={key} className='text-sm'>
       <div
-        className='w-full h-16'
+        className='w-full h-16 rounded'
         style={{ backgroundColor: colors[key] }}
       ></div>
       {key} <br />

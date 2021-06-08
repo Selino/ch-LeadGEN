@@ -49,7 +49,28 @@
     margin-bottom: 0 !important;
   }
 
+  /* Storybook Styles  */
+
+  .section-card {
+    @apply bg-gray1 rounded-xl p-3;
+  }
   .section-icon {
     @apply rounded bg-black;
+  }
+
+  .storybook-table {
+    @apply w-full rounded-lg overflow-hidden;
+  }
+
+  .storybook-table th {
+    @apply bg-gray2 p-4 text-sm;
+  }
+
+  .storybook-table tbody td {
+    @apply p-4;
+  }
+
+  .logo-table img {
+    @apply m-auto p-10;
   }
 }
