@@ -1,5 +1,5 @@
 import React from "react"
-import spacing from "../../tokens/spacing"
+import spacing from "tokens/spacing"
 
 const DisplaySpacing = () => {
   const mySpacing = Object.keys(spacing).map((key) => (

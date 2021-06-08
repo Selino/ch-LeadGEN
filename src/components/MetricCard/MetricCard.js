@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import DisplayCurrency from "../DisplayCurrency/DisplayCurrency"
-import DisplayUnit from "../DisplayUnit/DisplayUnit"
-import TrendIndicator from "../TrendIndicator/TrendIndicator"
+import DisplayCurrency from "components/DisplayCurrency/DisplayCurrency"
+import DisplayUnit from "components/DisplayUnit/DisplayUnit"
+import TrendIndicator from "components/TrendIndicator/TrendIndicator"
 
 /**
 Use the MetricCard to display insightful data in small chunks. These cards stretch to fill their parent on the horizontal axis and stack when the parent resizes on platform breakpoints.

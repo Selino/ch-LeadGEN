@@ -1,5 +1,5 @@
 import React from "react"
-import fontSizes from "../../tokens/fontSizes"
+import fontSizes from "tokens/fontSizes"
 
 const DisplayFontSizes = () => {
   const myFonts = Object.keys(fontSizes).map((key) => (

@@ -1,5 +1,5 @@
 import React from "react"
-import fontWeights from "../../tokens/fontWeights"
+import fontWeights from "tokens/fontWeights"
 
 const DisplayFontWeights = () => {
   const myFonts = Object.keys(fontWeights).map((key) => (

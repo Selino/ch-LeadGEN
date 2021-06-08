@@ -1,22 +1,22 @@
 import React from "react"
 import { getSampleData } from "./ExecutiveSummaryData"
-import Badge from "../Badge/Badge"
+import Badge from "components/Badge/Badge"
 import { Button } from "react-bootstrap"
 import ToolkitProvider, {
   Search,
   CSVExport,
 } from "react-bootstrap-table2-toolkit"
-import MiniBar from "../MiniBar/MiniBar"
+import MiniBar from "components/MiniBar/MiniBar"
 import moment from "moment"
 import Dinero from "dinero.js"
 import styled from "@emotion/styled"
-import colors from "../../tokens/colors"
-import fontSizes from "../../tokens/fontSizes"
-import fontWeights from "../../tokens/fontWeights"
-import radii from "../../tokens/radii"
-import shadows from "../../tokens/shadows"
-import spacing from "../../tokens/spacing"
-import borderWidths from "../../tokens/borderWidths"
+import colors from "tokens/colors"
+import fontSizes from "tokens/fontSizes"
+import fontWeights from "tokens/fontWeights"
+import radii from "tokens/radii"
+import shadows from "tokens/shadows"
+import spacing from "tokens/spacing"
+import borderWidths from "tokens/borderWidths"
 import {
   faCloudDownloadAlt,
   faSlidersH,

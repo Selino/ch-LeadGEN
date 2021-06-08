@@ -1,6 +1,6 @@
 import React from "react"
 import { NavDropdown, Form } from "react-bootstrap"
-import { getSampleData } from "../ExecutiveSummary/ExecutiveSummaryData"
+import { getSampleData } from "components/ExecutiveSummary/ExecutiveSummaryData"
 
 const myData = getSampleData()
 const getUnique = (arr, comp) => {

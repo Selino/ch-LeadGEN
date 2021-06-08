@@ -1,7 +1,7 @@
 import React from "react"
-import colors from "../../tokens/colors"
-import fontSizes from "../../tokens/fontSizes"
-import fontWeights from "../../tokens/fontWeights"
+import colors from "tokens/colors"
+import fontSizes from "tokens/fontSizes"
+import fontWeights from "tokens/fontWeights"
 
 export default function PageTitle(props) {
   const { title = "Page Title" } = props

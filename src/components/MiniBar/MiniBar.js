@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import colors from "../../tokens/colors"
-import radii from "../../tokens/radii"
+import colors from "tokens/colors"
+import radii from "tokens/radii"
 
 /**
 - Use the MiniBar when presented metrics are missing scope.

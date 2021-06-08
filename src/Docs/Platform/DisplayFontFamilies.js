@@ -1,5 +1,5 @@
 import React from "react"
-import fontFamilies from "../../tokens/fontFamilies"
+import fontFamilies from "tokens/fontFamilies"
 
 const DisplayFonts = () => {
   const myFonts = Object.keys(fontFamilies).map((key) => (

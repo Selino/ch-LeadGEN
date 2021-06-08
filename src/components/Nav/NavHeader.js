@@ -1,8 +1,8 @@
 import React from "react"
 import { ReactSVG } from "react-svg"
 import { Navbar, NavDropdown, Dropdown } from "react-bootstrap"
-import CompanyDropdown from "./CompanyDropdown"
-import FacilityDropdown from "./FacilityDropdown"
+import CompanyDropdown from "components/Nav/CompanyDropdown"
+import FacilityDropdown from "components/Nav/FacilityDropdown"
 
 /**
 NavHeader is a responsive and clean navigation bar guiding the user by visual cues. It contains navigation via the customizable drop-down menus. The NavHeader can be designed to include color schemes, company name, and user name in addition to the dropdown menus.
