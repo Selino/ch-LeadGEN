@@ -1,5 +1,6 @@
 const colors = require("./src/tokens/colors")
 const fontSizes = require("./src/tokens/fontSizes")
+const fontFamilies = require("./src/tokens/fontFamilies")
 
 module.exports = {
   purge: [],
@@ -20,7 +21,9 @@ module.exports = {
       chromebg: colors.chromeBackground,
     },
     fontFamily: {
-      sans: ["Roboto", "sans-serif"],
+      sans: [`"${fontFamilies.regular}"`, "sans-serif"],
+      sansBold: [`"${fontFamilies.bold}"`, "sans-serif"],
+      sansBlack: [`"${fontFamilies.black}"`, "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
     extend: {

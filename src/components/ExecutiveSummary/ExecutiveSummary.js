@@ -35,7 +35,7 @@ const Emotion = styled.div`
 
   table {
     font-size: 0.9rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto-regular", sans-serif;
     table-layout: auto !important;
   }
 
