@@ -30,7 +30,7 @@ export default {
     design: {
       type: "figma",
       url:
-        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/LG-UIKit-v3?node-id=395%3A6",
+        "https://www.figma.com/file/xGF6TXDWOoigzGthqp9i70/CH-UIKit-v3?node-id=1156%3A3",
     },
   },
 }
