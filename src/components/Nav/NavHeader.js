@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { ReactSVG } from "react-svg"
 import { Navbar, NavDropdown, Dropdown } from "react-bootstrap"
 import CompanyDropdown from "components/Nav/CompanyDropdown"
@@ -50,9 +51,15 @@ export default function NavHeader(props) {
           className='test'
         >
           <Dropdown.Header>Change Views</Dropdown.Header>
-          <NavDropdown.Item eventKey='4.1'>Campaign Overview</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2'>Executive Summary</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.1'>
+            <Link to='/dashboard'>Dashboard</Link>
+          </NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.2'>
+            <Link to='/overview'>Campaign Overview</Link>
+          </NavDropdown.Item>
+
           <NavDropdown.Divider />
+
           <Dropdown.Header>Switch App</Dropdown.Header>
           <NavDropdown.Item eventKey='disabled' disabled>
             LeadGEN
