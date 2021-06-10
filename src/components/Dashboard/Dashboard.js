@@ -2,6 +2,7 @@ import React from "react"
 import "App.css"
 import NavHeader from "components/Nav/NavHeader"
 import PageTitle from "components/Nav/PageTitle"
+import KMOT from "components/Dashboard/KMOT"
 
 export default function Dashboard() {
   return (
@@ -10,7 +11,9 @@ export default function Dashboard() {
       <div className='mt-20 pl-4'>
         <PageTitle title='Dashboard' />
       </div>
-      <main className='p-3'>Dashboard stuff goes here</main>
+      <main className='p-4'>
+        <KMOT />
+      </main>
     </div>
   )
 }

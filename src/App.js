@@ -11,7 +11,7 @@ function App() {
       <div className='mt-20 pl-4'>
         <PageTitle title='Campaign Overview' />
       </div>
-      <main className='p-3'>
+      <main className='p-4'>
         <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
           <MetricCard
             currency='USD'
