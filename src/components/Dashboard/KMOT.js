@@ -7,6 +7,8 @@ import {
   Line,
   Tooltip,
   CartesianGrid,
+  Legend,
+  Label,
 } from "recharts"
 import { format, parseISO, subDays } from "date-fns"
 import colors from "tokens/colors"
@@ -14,28 +16,44 @@ import borderWidths from "tokens/borderWidths"
 
 export default function KMOT() {
   const maxClicks = 320
-  const minClicks = 110
+  const minClicks = 60
+  const maxImps = 5000
+  const minImps = 4000
   const data = []
   for (let num = 30; num >= 0; num--) {
     data.push({
       date: subDays(new Date(), num).toISOString().substr(0, 10),
-      value: Math.floor(
+      clicks: Math.floor(
         Math.random() * (maxClicks - minClicks + 1) + minClicks
+      ),
+      impressions: Math.floor(
+        Math.random() * (maxImps - minImps + 1) + minImps
       ),
     })
   }
-  // Math.floor(Math.random() * 6) + 1
 
   return (
     <div className='metric-card-container'>
       <div className='metric-card-header'>Key Metrics Over Time</div>
       <div className='metric-card-body'>
-        <ResponsiveContainer width='100%' height={400}>
+        <div className='chart-controls p-4 text-center'>Controls Go Here</div>
+        <ResponsiveContainer className='m-auto' width='100%' height={400}>
           <LineChart data={data}>
             <Line
-              dataKey='value'
-              stroke={colors.buttonPrimaryActive}
-              strokeWidth={borderWidths.fat}
+              yAxisId='left'
+              name='Clicks'
+              dataKey='clicks'
+              stroke={colors.info}
+              strokeWidth={borderWidths.lineChart}
+              activeDot={{ r: 8 }}
+            />
+            <Line
+              yAxisId='right'
+              name='Impressions'
+              dataKey='impressions'
+              stroke={colors.backgroundInfo}
+              strokeWidth={borderWidths.lineChart}
+              activeDot={{ r: 8 }}
             />
             <XAxis
               dataKey='date'
@@ -50,18 +68,41 @@ export default function KMOT() {
               }}
             />
             <YAxis
-              dataKey='value'
+              yAxisId='left'
+              dataKey='clicks'
               axisLine={false}
               tickLine={false}
               tickCount={6}
-              // tickFormatter={(number) => `$${number.toFixed(2)}`}
-            />
+            >
+              <Label
+                value='clicks'
+                offset={0}
+                angle={-90}
+                position='insideLeft'
+              />
+            </YAxis>
+            <YAxis
+              yAxisId='right'
+              orientation='right'
+              dataKey='impressions'
+              axisLine={false}
+              tickLine={false}
+              tickCount={8}
+            >
+              <Label
+                value='impressions'
+                offset={0}
+                angle={90}
+                position='insideRight'
+              />
+            </YAxis>
             <Tooltip />
             <CartesianGrid
               opacity={0.5}
               vertical={false}
               color={colors.black}
             />
+            <Legend verticalAlign='bottom' height={36} />
           </LineChart>
         </ResponsiveContainer>
       </div>
