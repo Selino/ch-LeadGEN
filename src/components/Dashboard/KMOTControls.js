@@ -14,7 +14,11 @@ export default function KMOTControls() {
   const [startDate, endDate] = dateRange
 
   const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
-    <button className='example-custom-input p-2' onClick={onClick} ref={ref}>
+    <button
+      className='example-custom-input w-auto p-2'
+      onClick={onClick}
+      ref={ref}
+    >
       {value}
       <ReactSVG
         src='graphics/utiCarretDown.svg'
@@ -24,46 +28,53 @@ export default function KMOTControls() {
   ))
 
   return (
-    <div className='flex'>
-      <Dropdown>
-        <Dropdown.Toggle variant='' id='dropdown-basic'>
-          All Channels
-          <ReactSVG
-            src='graphics/utiCarretDown.svg'
-            className='svg-primary inline-block align-middle'
-          />
-        </Dropdown.Toggle>
+    <div className='sm:flex justify-between gap-4'>
+      <div className='sm:flex'>
+        <Dropdown className=''>
+          <Dropdown.Toggle variant='' id='dropdown-basic'>
+            All Channels
+            <ReactSVG
+              src='graphics/utiCarretDown.svg'
+              className='svg-primary inline-block align-middle'
+            />
+          </Dropdown.Toggle>
 
-        <Dropdown.Menu>
-          <Dropdown.Item href='#/action-1'>All Channels</Dropdown.Item>
-          <Dropdown.Item href='#/action-2'>Facebook</Dropdown.Item>
-          <Dropdown.Item href='#/action-3'>Google Ads</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-      <Dropdown className='ml-4'>
-        <Dropdown.Toggle variant='' id='dropdown-basic'>
-          Clicks & Impressions
-          <ReactSVG
-            src='graphics/utiCarretDown.svg'
-            className='svg-primary inline-block align-middle'
-          />
-        </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href='#/action-1'>All Channels</Dropdown.Item>
+            <Dropdown.Item href='#/action-2'>Facebook</Dropdown.Item>
+            <Dropdown.Item href='#/action-3'>Google Ads</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
 
-        <Dropdown.Menu>
-          <Dropdown.Item href='#/action-1'>Clicks & Impressions</Dropdown.Item>
-          <Dropdown.Item href='#/action-2'>CPC & Spend</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-      <DatePicker
-        className='p-2 w-auto ml-4 cursor-pointer'
-        selectsRange={true}
-        startDate={startDate}
-        endDate={endDate}
-        onChange={(update) => {
-          setDateRange(update)
-        }}
-        customInput={<ExampleCustomInput />}
-      />
+        <Dropdown className=''>
+          <Dropdown.Toggle variant='' id='dropdown-basic'>
+            Clicks & Impressions
+            <ReactSVG
+              src='graphics/utiCarretDown.svg'
+              className='svg-primary inline-block align-middle'
+            />
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href='#/action-1'>
+              Clicks & Impressions
+            </Dropdown.Item>
+            <Dropdown.Item href='#/action-2'>CPC & Spend</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </div>
+      <div className='pl-2'>
+        <DatePicker
+          className='p-2 w-auto ml-4 cursor-pointer'
+          selectsRange={true}
+          startDate={startDate}
+          endDate={endDate}
+          onChange={(update) => {
+            setDateRange(update)
+          }}
+          customInput={<ExampleCustomInput />}
+        />
+      </div>
     </div>
   )
 }
