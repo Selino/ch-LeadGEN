@@ -21,7 +21,7 @@ export default function KMOTControls() {
     >
       {value}
       <ReactSVG
-        src='graphics/utiCarretDown.svg'
+        src='/graphics/utiCarretDown.svg'
         className='svg-primary inline-block align-middle ml-1'
       />
     </button>
@@ -34,7 +34,7 @@ export default function KMOTControls() {
           <Dropdown.Toggle variant='' id='dropdown-basic'>
             All Channels
             <ReactSVG
-              src='graphics/utiCarretDown.svg'
+              src='/graphics/utiCarretDown.svg'
               className='svg-primary inline-block align-middle'
             />
           </Dropdown.Toggle>
@@ -50,7 +50,7 @@ export default function KMOTControls() {
           <Dropdown.Toggle variant='' id='dropdown-basic'>
             Clicks & Impressions
             <ReactSVG
-              src='graphics/utiCarretDown.svg'
+              src='/graphics/utiCarretDown.svg'
               className='svg-primary inline-block align-middle'
             />
           </Dropdown.Toggle>
