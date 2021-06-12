@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, forwardRef } from "react"
 import { Dropdown } from "react-bootstrap"
 import { ReactSVG } from "react-svg"
 import DatePicker from "react-datepicker"
@@ -12,6 +12,17 @@ export default function KMOTControls() {
     new Date(),
   ])
   const [startDate, endDate] = dateRange
+
+  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
+    <button className='example-custom-input p-2' onClick={onClick} ref={ref}>
+      {value}
+      <ReactSVG
+        src='graphics/utiCarretDown.svg'
+        className='svg-primary inline-block align-middle ml-1'
+      />
+    </button>
+  ))
+
   return (
     <div className='flex'>
       <Dropdown>
@@ -44,17 +55,14 @@ export default function KMOTControls() {
         </Dropdown.Menu>
       </Dropdown>
       <DatePicker
-        className='p-2 w-px ml-4 cursor-pointer'
+        className='p-2 w-auto ml-4 cursor-pointer'
         selectsRange={true}
         startDate={startDate}
         endDate={endDate}
         onChange={(update) => {
           setDateRange(update)
         }}
-      />
-      <ReactSVG
-        src='graphics/utiCarretDown.svg'
-        className='svg-primary inline-block align-middle ml-1'
+        customInput={<ExampleCustomInput />}
       />
     </div>
   )
