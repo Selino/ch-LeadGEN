@@ -16,7 +16,7 @@ export default function CompanyDropdown(props) {
             </div>
           </div>
           <ReactSVG
-            src='/graphics/utiCarretDown.svg'
+            src='graphics/utiCarretDown.svg'
             className='svg-light my-auto'
           />
         </div>

@@ -13,6 +13,7 @@ import {
 import { format, parseISO, subDays } from "date-fns"
 import colors from "tokens/colors"
 import borderWidths from "tokens/borderWidths"
+import KMOTControls from "components/Dashboard/KMOTControls"
 
 export default function KMOT() {
   const maxClicks = 320
@@ -36,7 +37,9 @@ export default function KMOT() {
     <div className='metric-card-container'>
       <div className='metric-card-header'>Key Metrics Over Time</div>
       <div className='metric-card-body'>
-        <div className='chart-controls p-4 text-center'>Controls Go Here</div>
+        <div className='chart-controls p-4'>
+          <KMOTControls />
+        </div>
         <ResponsiveContainer className='m-auto' width='100%' height={400}>
           <LineChart data={data}>
             <Line
@@ -51,7 +54,7 @@ export default function KMOT() {
               yAxisId='right'
               name='Impressions'
               dataKey='impressions'
-              stroke={colors.backgroundInfo}
+              stroke={colors.warning}
               strokeWidth={borderWidths.lineChart}
               activeDot={{ r: 8 }}
             />
