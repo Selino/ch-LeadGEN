@@ -1,8 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import { Dropdown } from "react-bootstrap"
 import { ReactSVG } from "react-svg"
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
 
 export default function KMOTControls() {
+  const today = new Date()
+  const prevDay = new Date()
+  const [dateRange, setDateRange] = useState([
+    prevDay.setDate(today.getDate() - 30),
+    new Date(),
+  ])
+  const [startDate, endDate] = dateRange
   return (
     <div className='flex'>
       <Dropdown>
@@ -10,7 +19,7 @@ export default function KMOTControls() {
           All Channels
           <ReactSVG
             src='graphics/utiCarretDown.svg'
-            className='svg-primary inline-block align-middle ml-1'
+            className='svg-primary inline-block align-middle'
           />
         </Dropdown.Toggle>
 
@@ -20,13 +29,12 @@ export default function KMOTControls() {
           <Dropdown.Item href='#/action-3'>Google Ads</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-
       <Dropdown className='ml-4'>
         <Dropdown.Toggle variant='' id='dropdown-basic'>
           Clicks & Impressions
           <ReactSVG
             src='graphics/utiCarretDown.svg'
-            className='svg-primary inline-block align-middle ml-1'
+            className='svg-primary inline-block align-middle'
           />
         </Dropdown.Toggle>
 
@@ -35,6 +43,19 @@ export default function KMOTControls() {
           <Dropdown.Item href='#/action-2'>CPC & Spend</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
+      <DatePicker
+        className='p-2 w-px ml-4 cursor-pointer'
+        selectsRange={true}
+        startDate={startDate}
+        endDate={endDate}
+        onChange={(update) => {
+          setDateRange(update)
+        }}
+      />
+      <ReactSVG
+        src='graphics/utiCarretDown.svg'
+        className='svg-primary inline-block align-middle ml-1'
+      />
     </div>
   )
 }
