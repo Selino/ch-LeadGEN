@@ -13,6 +13,7 @@ import {
 import { format, parseISO, subDays } from "date-fns"
 import colors from "tokens/colors"
 import borderWidths from "tokens/borderWidths"
+import fontSizes from "tokens/fontSizes"
 import KMOTControls from "components/Dashboard/KMOTControls"
 
 export default function KMOT() {
@@ -46,7 +47,7 @@ export default function KMOT() {
               yAxisId='left'
               name='Clicks'
               dataKey='clicks'
-              stroke={colors.info}
+              stroke={colors.success}
               strokeWidth={borderWidths.lineChart}
               activeDot={{ r: 8 }}
             />
@@ -61,7 +62,6 @@ export default function KMOT() {
             <XAxis
               dataKey='date'
               axisLine={false}
-              tickLine={false}
               tickFormatter={(str) => {
                 const date = parseISO(str)
                 if (date.getDate() % 7 === 0) {
@@ -76,14 +76,12 @@ export default function KMOT() {
               axisLine={false}
               tickLine={false}
               tickCount={6}
-            >
-              <Label
-                value='clicks'
-                offset={0}
-                angle={-90}
-                position='insideLeft'
-              />
-            </YAxis>
+              color={colors.success}
+              style={{
+                fill: colors.success,
+                fontSize: fontSizes.microcopy,
+              }}
+            ></YAxis>
             <YAxis
               yAxisId='right'
               orientation='right'
@@ -91,21 +89,15 @@ export default function KMOT() {
               axisLine={false}
               tickLine={false}
               tickCount={8}
-            >
-              <Label
-                value='impressions'
-                offset={0}
-                angle={90}
-                position='insideRight'
-              />
-            </YAxis>
+              style={{ fill: colors.warning, fontSize: fontSizes.microcopy }}
+            ></YAxis>
             <Tooltip />
             <CartesianGrid
               opacity={0.5}
               vertical={false}
               color={colors.black}
             />
-            <Legend verticalAlign='bottom' height={36} />
+            <Legend verticalAlign='bottom' align='center' />
           </LineChart>
         </ResponsiveContainer>
       </div>
