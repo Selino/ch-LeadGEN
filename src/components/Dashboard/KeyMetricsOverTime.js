@@ -71,7 +71,7 @@ export const KMOT = ({ data }) => {
               yAxisId='left'
               name='Clicks'
               dataKey='clicks'
-              stroke={colors.success}
+              stroke={colors.buttonPrimaryInactive}
               strokeWidth={borderWidths.lineChart}
               activeDot={{ r: 8 }}
             />
@@ -102,7 +102,7 @@ export const KMOT = ({ data }) => {
               tickCount={6}
               color={colors.success}
               style={{
-                fill: colors.success,
+                fill: colors.buttonPrimaryInactive,
                 fontSize: fontSizes.microcopy,
               }}
             ></YAxis>
