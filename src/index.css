@@ -68,6 +68,10 @@
     @apply p-4 bg-white;
   }
 
+  .text-shadow {
+    text-shadow: 1px 1px 1px black;
+  }
+
   /* Storybook Styles  */
   .section-card {
     @apply bg-gray1 rounded-xl p-4;
