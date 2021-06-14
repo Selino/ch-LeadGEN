@@ -1,32 +1,8 @@
-import React, { useState, forwardRef } from "react"
+import React from "react"
 import { Dropdown } from "react-bootstrap"
 import { ReactSVG } from "react-svg"
-import DatePicker from "react-datepicker"
-import "react-datepicker/dist/react-datepicker.css"
 
 export default function KMOTControls() {
-  const today = new Date()
-  const prevDay = new Date()
-  const [dateRange, setDateRange] = useState([
-    prevDay.setDate(today.getDate() - 30),
-    new Date(),
-  ])
-  const [startDate, endDate] = dateRange
-
-  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
-    <button
-      className='example-custom-input w-auto p-2'
-      onClick={onClick}
-      ref={ref}
-    >
-      {value}
-      <ReactSVG
-        src='/graphics/utiCarretDown.svg'
-        className='svg-primary inline-block align-middle ml-1'
-      />
-    </button>
-  ))
-
   return (
     <div className='sm:flex justify-between gap-4'>
       <div className='sm:flex'>
@@ -62,18 +38,6 @@ export default function KMOTControls() {
             <Dropdown.Item href='#/action-2'>CPC & Spend</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-      </div>
-      <div className='pl-2'>
-        <DatePicker
-          className='p-2 w-auto ml-4 cursor-pointer'
-          selectsRange={true}
-          startDate={startDate}
-          endDate={endDate}
-          onChange={(update) => {
-            setDateRange(update)
-          }}
-          customInput={<ExampleCustomInput />}
-        />
       </div>
     </div>
   )

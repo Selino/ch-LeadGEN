@@ -8,7 +8,6 @@ import {
   Tooltip,
   CartesianGrid,
   Legend,
-  Label,
 } from "recharts"
 import { format, parseISO } from "date-fns"
 import colors from "tokens/colors"

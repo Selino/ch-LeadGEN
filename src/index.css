@@ -29,12 +29,12 @@
     @apply fill-current text-danger;
   }
 
-  .svg-xl > svg {
-    @apply w-9 h-9 m-auto;
+  .svg-brand > svg > path {
+    @apply fill-current text-brand;
   }
 
-  .svg-xl > svg > path {
-    @apply fill-current text-brand;
+  .svg-xl > svg {
+    @apply w-9 h-9 m-auto;
   }
 
   .branding > svg {
