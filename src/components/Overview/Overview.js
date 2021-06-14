@@ -9,7 +9,7 @@ function Overview() {
     <div className='App'>
       <NavHeader Position='top' />
       <div className='mt-20 pl-4'>
-        <PageTitle title='Campaign Overview' />
+        <PageTitle title='Overview' />
       </div>
       <main className='p-4'>
         <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>

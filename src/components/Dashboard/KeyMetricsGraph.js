@@ -10,30 +10,13 @@ import {
   Legend,
   Label,
 } from "recharts"
-import { format, parseISO, subDays } from "date-fns"
+import { format, parseISO } from "date-fns"
 import colors from "tokens/colors"
 import borderWidths from "tokens/borderWidths"
 import fontSizes from "tokens/fontSizes"
-import KMOTControls from "components/Dashboard/KMOTControls"
+import KMOTControls from "components/Dashboard/KeyMetricsControls"
 
-export default function KMOT() {
-  const maxClicks = 320
-  const minClicks = 60
-  const maxImps = 5000
-  const minImps = 4000
-  const data = []
-  for (let num = 30; num >= 0; num--) {
-    data.push({
-      date: subDays(new Date(), num).toISOString().substr(0, 10),
-      clicks: Math.floor(
-        Math.random() * (maxClicks - minClicks + 1) + minClicks
-      ),
-      impressions: Math.floor(
-        Math.random() * (maxImps - minImps + 1) + minImps
-      ),
-    })
-  }
-
+export default function KMOT({ data }) {
   return (
     <div className='metric-card-container'>
       <div className='metric-card-header'>Key Metrics Over Time</div>

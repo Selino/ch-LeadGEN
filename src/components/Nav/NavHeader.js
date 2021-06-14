@@ -50,11 +50,11 @@ export default function NavHeader(props) {
           className='test'
         >
           <Dropdown.Header>Change Views</Dropdown.Header>
+          <NavDropdown.Item eventKey='4.2' href='/overview/'>
+            Overview
+          </NavDropdown.Item>
           <NavDropdown.Item eventKey='4.1' href='/dashboard/'>
             Dashboard
-          </NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2' href='/overview/'>
-            Campaign Overview
           </NavDropdown.Item>
 
           <NavDropdown.Divider />
