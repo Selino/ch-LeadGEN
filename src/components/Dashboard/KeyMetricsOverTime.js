@@ -57,7 +57,7 @@ export const KMOTControls = () => {
   )
 }
 
-export default function KMOT({ data }) {
+export const KMOT = ({ data }) => {
   return (
     <div className='metric-card-container'>
       <div className='metric-card-header'>Key Metrics Over Time</div>
@@ -128,3 +128,5 @@ export default function KMOT({ data }) {
     </div>
   )
 }
+
+export default KMOT
