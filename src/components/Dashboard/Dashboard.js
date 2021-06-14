@@ -3,6 +3,7 @@ import "App.css"
 import NavHeader from "components/Nav/NavHeader"
 import PageTitle from "components/Nav/PageTitle"
 import KeyMetricsGraph from "components/Dashboard/KeyMetricsOverTime"
+import ConversionsByType from "components/Dashboard/ConversionsByType"
 import StaredDates from "components/Dashboard/StaredDates"
 import { subDays } from "date-fns"
 import DatePicker from "react-datepicker"
@@ -68,8 +69,9 @@ export default function Dashboard() {
           <StaredDates />
         </div>
       </div>
-      <main className='p-4'>
+      <main className='p-4 flex flex-col gap-8'>
         <KeyMetricsGraph data={data} />
+        <ConversionsByType data={data} />
       </main>
     </div>
   )
