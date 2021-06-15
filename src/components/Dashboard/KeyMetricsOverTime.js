@@ -61,11 +61,11 @@ export const KMOT = ({ data }) => {
   return (
     <div className='metric-card-container'>
       <div className='metric-card-header'>Key Metrics Over Time</div>
-      <div className='metric-card-body'>
-        <div className='chart-controls p-4'>
+      <div className='metric-card-body h-70 md:h-60 lg:h-80'>
+        <div className='chart-controls'>
           <KMOTControls />
         </div>
-        <ResponsiveContainer className='m-auto' width='100%' height={400}>
+        <ResponsiveContainer className='m-auto' width='100%' height='90%'>
           <LineChart data={data}>
             <Line
               yAxisId='left'
