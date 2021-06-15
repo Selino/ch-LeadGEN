@@ -48,6 +48,10 @@
   .dropdown-toggle::after {
     display: none !important;
   }
+  .dropdown-menu {
+    @apply max-w-xs sm:max-w-lg overflow-hidden;
+  }
+
   label {
     margin-bottom: 0 !important;
   }

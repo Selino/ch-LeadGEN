@@ -22,7 +22,7 @@ export default function NavHeader(props) {
           />
           <ReactSVG
             src='/graphics/logoLeadgen.svg'
-            className='inline-block branding'
+            className='inline-block branding hidden sm:inline-block'
           />
         </div>
       </Navbar.Brand>
@@ -32,6 +32,7 @@ export default function NavHeader(props) {
 
         <NavDropdown
           alignRight
+          className='max-w-sm'
           title={
             <ReactSVG src='/graphics/utiLocation.svg' className='svg-light' />
           }

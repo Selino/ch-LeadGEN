@@ -61,7 +61,7 @@ export const KMOT = ({ data }) => {
   return (
     <div className='metric-card-container'>
       <div className='metric-card-header'>Key Metrics Over Time</div>
-      <div className='metric-card-body h-70 md:h-60 lg:h-80'>
+      <div className='metric-card-body h-72 sm:h-90 md:h-128'>
         <div className='chart-controls'>
           <KMOTControls />
         </div>

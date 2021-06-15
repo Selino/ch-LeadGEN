@@ -20,8 +20,8 @@ function Overview() {
             label='Spend to Date'
             unit='thousand'
           />
-          <MetricCard value={236} baseValue={100} label='Conversions' />{" "}
-          <MetricCard currency='USD' value={205} baseValue={205} label='CPC' />{" "}
+          <MetricCard value={236} baseValue={100} label='Conversions' />
+          <MetricCard currency='USD' value={205} baseValue={205} label='CPC' />
           <MetricCard value={92} label='Live' />
         </div>
         <ExecutiveSummary />
