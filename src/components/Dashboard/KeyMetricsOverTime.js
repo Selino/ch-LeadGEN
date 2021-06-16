@@ -14,6 +14,7 @@ import { format, parseISO } from "date-fns"
 import colors from "tokens/colors"
 import borderWidths from "tokens/borderWidths"
 import fontSizes from "tokens/fontSizes"
+import spacing from "tokens/spacing"
 import { Dropdown } from "react-bootstrap"
 
 export const KMOTControls = () => {
@@ -66,7 +67,10 @@ export const KMOT = ({ data }) => {
           <KMOTControls />
         </div>
         <ResponsiveContainer className='m-auto' width='100%' height='90%'>
-          <LineChart data={data}>
+          <LineChart
+            data={data}
+            margin={{ top: 16, right: 0, bottom: 0, left: 0 }}
+          >
             <Line
               yAxisId='left'
               name='Clicks'

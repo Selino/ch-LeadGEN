@@ -113,23 +113,23 @@ export const MetricDonut = ({
 export default function ConversionsByType() {
   const data1 = [
     {
-      name: "Incomplete",
+      name: "Phone Calls",
       value: randomNumber(200, 300),
     },
     {
-      name: "Complete",
+      name: "Appointments",
       value: randomNumber(50, 300),
     },
   ]
 
   const data2 = [
     {
-      name: "Incomplete",
-      value: randomNumber(50, 200),
+      name: "Assessments",
+      value: randomNumber(200, 1200),
     },
     {
-      name: "Complete",
-      value: randomNumber(200, 1200),
+      name: "Appointments",
+      value: randomNumber(50, 200),
     },
   ]
 

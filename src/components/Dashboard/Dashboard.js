@@ -54,7 +54,7 @@ export default function Dashboard() {
       <NavHeader className='relative' Position='top' />
       <div className='px-4 py-2 sm:flex justify-between flex-nowrap top-16 bg-chromebg w-full fixed z-10'>
         <PageTitle title='Dashboard' />
-        <div className='flex flex-nowrap'>
+        <div className='flex flex-nowrap pt-2'>
           <DatePicker
             className='cursor-pointer'
             selectsRange={true}
@@ -68,7 +68,7 @@ export default function Dashboard() {
           <StaredDates />
         </div>
       </div>
-      <main className='p-4 flex flex-col gap-8 mt-32'>
+      <main className='p-4 flex flex-col gap-8 mt-28'>
         <KeyMetricsGraph data={data} />
         <ConversionsByType data={data} />
       </main>
