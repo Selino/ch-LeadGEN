@@ -35,6 +35,9 @@ const ShowAllIcons = ({ type }) => {
         "utiSearch",
         "utiSliders",
         "utiSquare",
+        "utiCalendar",
+        "utiCalendarStar",
+        "utiCalendarAlt",
       ]
       break
     case "docs":
