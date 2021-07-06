@@ -39,7 +39,7 @@ export default function Dashboard() {
   ])
 
   const [startDate, endDate] = dateRange
-  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
+  const CustomInput = forwardRef(({ value, onClick }, ref) => (
     <button className='' onClick={onClick} ref={ref}>
       {value}
       <ReactSVG
@@ -63,7 +63,7 @@ export default function Dashboard() {
             onChange={(update) => {
               setDateRange(update)
             }}
-            customInput={<ExampleCustomInput />}
+            customInput={<CustomInput />}
           />
           <StaredDates />
         </div>

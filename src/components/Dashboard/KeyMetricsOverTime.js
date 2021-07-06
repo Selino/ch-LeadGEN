@@ -14,7 +14,6 @@ import { format, parseISO } from "date-fns"
 import colors from "tokens/colors"
 import borderWidths from "tokens/borderWidths"
 import fontSizes from "tokens/fontSizes"
-import spacing from "tokens/spacing"
 import { Dropdown } from "react-bootstrap"
 
 export const KMOTControls = () => {
