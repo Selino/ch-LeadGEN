@@ -1,15 +1,15 @@
-import "./App.css"
-import NavHeader from "./components/Nav/NavHeader"
-import ExecutiveSummary from "./components/ExecutiveSummary/ExecutiveSummary"
-import MetricCard from "./components/MetricCard/MetricCard"
-import PageTitle from "./components/Nav/PageTitle"
+import "App.css"
+import NavHeader from "components/Nav/NavHeader"
+import ExecutiveSummary from "components/ExecutiveSummary/ExecutiveSummary"
+import MetricCard from "components/MetricCard/MetricCard"
+import PageTitle from "components/Nav/PageTitle"
 
-function App() {
+function Overview() {
   return (
     <div className='App'>
       <NavHeader Position='top' />
       <div className='mt-20 pl-4'>
-        <PageTitle title='Campaign Overview' />
+        <PageTitle title='Overview' />
       </div>
       <main className='p-4'>
         <div className='mb-4 grid gap-7 grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4'>
@@ -20,8 +20,8 @@ function App() {
             label='Spend to Date'
             unit='thousand'
           />
-          <MetricCard value={236} baseValue={100} label='Conversions' />{" "}
-          <MetricCard currency='USD' value={205} baseValue={205} label='CPC' />{" "}
+          <MetricCard value={236} baseValue={100} label='Conversions' />
+          <MetricCard currency='USD' value={205} baseValue={205} label='CPC' />
           <MetricCard value={92} label='Live' />
         </div>
         <ExecutiveSummary />
@@ -30,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default Overview

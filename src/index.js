@@ -1,14 +1,14 @@
-import React from "react"
+import React, { Fragment } from "react"
 import ReactDOM from "react-dom"
-import App from "./App"
+import AppRouter from "./routes/AppRouter"
 import reportWebVitals from "./reportWebVitals"
 import "./index.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Fragment>
+    <AppRouter />
+  </Fragment>,
   document.getElementById("root")
 )
 

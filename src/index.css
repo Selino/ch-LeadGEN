@@ -8,6 +8,7 @@
     @apply bg-chromebg !important;
   }
 
+  /* svg  */
   .svg-light > svg > path {
     @apply fill-current text-white;
   }
@@ -28,31 +29,56 @@
     @apply fill-current text-danger;
   }
 
+  .svg-brand > svg > path {
+    @apply fill-current text-brand;
+  }
+
   .svg-xl > svg {
     @apply w-9 h-9 m-auto;
   }
 
-  .svg-xl > svg > path {
-    @apply fill-current text-brand;
+  .branding > svg {
+    height: 32px;
   }
 
+  /* App Styles */
   .badge {
     @apply text-badge text-center;
   }
   .dropdown-toggle::after {
     display: none !important;
   }
-  .branding > svg {
-    height: 32px;
+  .dropdown-menu {
+    @apply max-w-xs sm:max-w-lg overflow-hidden;
   }
+
   label {
     margin-bottom: 0 !important;
   }
 
-  /* Storybook Styles  */
+  .metric-card {
+    @apply rounded-xl shadow-md box-content relative bg-white p-4;
+  }
 
+  .metric-card-container {
+    @apply rounded-xl shadow-md box-content relative bg-white overflow-hidden;
+  }
+
+  .metric-card-header {
+    @apply p-4 bg-gray2 text-gray4 text-center text-sm;
+  }
+
+  .metric-card-body {
+    @apply p-4 bg-white;
+  }
+
+  .text-shadow {
+    text-shadow: 1px 1px 1px black;
+  }
+
+  /* Storybook Styles  */
   .section-card {
-    @apply bg-gray1 rounded-xl p-3;
+    @apply bg-gray1 rounded-xl p-4;
   }
   .section-icon {
     @apply rounded bg-black;

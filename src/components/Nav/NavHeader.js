@@ -22,7 +22,7 @@ export default function NavHeader(props) {
           />
           <ReactSVG
             src='/graphics/logoLeadgen.svg'
-            className='inline-block branding'
+            className='inline-block branding hidden sm:inline-block'
           />
         </div>
       </Navbar.Brand>
@@ -32,6 +32,7 @@ export default function NavHeader(props) {
 
         <NavDropdown
           alignRight
+          className='max-w-sm'
           title={
             <ReactSVG src='/graphics/utiLocation.svg' className='svg-light' />
           }
@@ -50,9 +51,15 @@ export default function NavHeader(props) {
           className='test'
         >
           <Dropdown.Header>Change Views</Dropdown.Header>
-          <NavDropdown.Item eventKey='4.1'>Campaign Overview</NavDropdown.Item>
-          <NavDropdown.Item eventKey='4.2'>Executive Summary</NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.2' href='/overview/'>
+            Overview
+          </NavDropdown.Item>
+          <NavDropdown.Item eventKey='4.1' href='/dashboard/'>
+            Dashboard
+          </NavDropdown.Item>
+
           <NavDropdown.Divider />
+
           <Dropdown.Header>Switch App</Dropdown.Header>
           <NavDropdown.Item eventKey='disabled' disabled>
             LeadGEN
