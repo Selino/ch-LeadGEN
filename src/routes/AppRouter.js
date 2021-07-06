@@ -9,7 +9,6 @@ const Dashboard = lazy(() => import("components/Dashboard/Dashboard"))
 
 const AppRouter = () => (
   <Router history={history}>
-    {" "}
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route exact path='/dashboard' component={Dashboard} />
