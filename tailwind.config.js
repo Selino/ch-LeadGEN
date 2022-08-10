@@ -6,21 +6,7 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      white: colors.white,
-      black: colors.black,
-      gray1: colors.graysGray1,
-      gray2: colors.graysGray2,
-      gray3: colors.graysGray3,
-      gray4: colors.graysGray4,
-      gray5: colors.graysGray5,
-      primary: colors.primaryInactive,
-      brand: colors.brandLeadGen,
-      success: colors.alertSuccess,
-      danger: colors.alertDanger,
-      borderborder: colors.chromeBorder,
-      chromebg: colors.chromeBackground,
-    },
+    colors: colors,
     fontFamily: {
       sans: [`"${fontFamilies.regular}"`, "sans-serif"],
       sansBold: [`"${fontFamilies.bold}"`, "sans-serif"],

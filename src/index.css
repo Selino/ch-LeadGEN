@@ -5,7 +5,7 @@
 @layer base {
   body,
   html {
-    @apply bg-chromebg !important;
+    @apply bg-chromeBackground !important;
   }
 
   /* svg  */
@@ -14,11 +14,11 @@
   }
 
   .svg-primary > svg > path {
-    @apply fill-current text-primary;
+    @apply fill-current text-buttonPrimaryInactive;
   }
 
   .svg-secondary > svg > path {
-    @apply fill-current text-gray3;
+    @apply fill-current text-graysGray3;
   }
 
   .svg-success > svg > path {
@@ -30,7 +30,7 @@
   }
 
   .svg-brand > svg > path {
-    @apply fill-current text-brand;
+    @apply fill-current text-brandLeadGen;
   }
 
   .svg-xl > svg {
@@ -65,7 +65,7 @@
   }
 
   .metric-card-header {
-    @apply p-4 bg-gray2 text-gray4 text-center text-sm;
+    @apply p-4 bg-graysGray2 text-graysGray4 text-center text-sm;
   }
 
   .metric-card-body {
@@ -78,7 +78,7 @@
 
   /* Storybook Styles  */
   .section-card {
-    @apply bg-gray1 rounded-xl p-4;
+    @apply bg-graysGray1 rounded-xl p-4;
   }
   .section-icon {
     @apply rounded bg-black;
@@ -89,7 +89,7 @@
   }
 
   .storybook-table th {
-    @apply bg-gray2 p-4 text-sm;
+    @apply bg-graysGray2 p-4 text-sm;
   }
 
   .storybook-table tbody td {
