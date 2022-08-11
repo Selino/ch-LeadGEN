@@ -14,15 +14,12 @@ const DisplayColors = () => {
           (rgb[3] | (1 << 8)).toString(16).slice(1)
         : orig
 
-    if (alpha !== "") {
-      a = alpha
-    } else {
-      a = "1"
-    }
+    alpha !== "" ? (a = alpha) : (a = "1")
+
     // multiply before convert to HEX
     a = ((a * 255) | (1 << 8)).toString(16).slice(1)
-    // hex = hex + a
-    hex = hex
+    hex = hex + a
+    // hex = hex
     return hex
   }
 

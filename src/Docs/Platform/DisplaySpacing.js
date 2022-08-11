@@ -5,7 +5,7 @@ const DisplaySpacing = () => {
   const mySpacing = Object.keys(spacing).map((key) => (
     <div key={key} className='text-sm'>
       <div
-        className='h-8 bg-gray4 rounded'
+        className='h-8 bg-graysGray3 rounded'
         style={{ width: spacing[key] }}
       ></div>
       {key} <br />
